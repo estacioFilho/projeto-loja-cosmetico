@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url(/style/header.css);
+:root{
+    --fonte-titulo: 'Franklin Gothic';
+    --fonte-paragrafo: "Montserrat", sans-serif;
+    --cor-titulo-preto: #262626;
+    --cor-paragrafo-cinza:#404040;
+
+    --cor-branco: #ffffff;
+    --cor-preto: #090909;
+    --cor-cinza: #BFBFBF;
+    --cor-cinza-claro:#F0F0F0;
+
+
+
+}
+body{
+    font-family: var(--fonte-paragrafo);
+    font-size: 14px;
+    font-weight: 400;
+}
