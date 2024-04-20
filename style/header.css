@@ -1,0 +1,25 @@
+
+.cabecalho__promocao{
+    display: flex;
+    width: 100%;
+    height: 4em;
+    background-color: var(--cor-cinza);
+    font-family: var(--fonte-paragrafo);
+    font-size: 10.5px;
+    color: var(--cor-paragrafo-cinza);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cabecalho__promocao__icone-promocao{
+    background-image: url(../assets/desconto.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.cabecalho__promocao__texto-promocao{
+    font-weight: 700;
+}
+.cabecalho__promocao_destaque{
+    text-transform: uppercase;
+}
