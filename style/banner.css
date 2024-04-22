@@ -1,0 +1,23 @@
+.conteiner__banner-slide{
+    width: 390px ;
+    height: 440px;
+    cursor: pointer;
+}
+.conteiner__pesquisar-campo{
+    border: none;
+    background-color: var(--cor-cinza-claro);
+    border-radius: 20px;
+    padding: 0.5em;
+    width: 100%;
+}
+.conteiner__pesquisar-campo::placeholder{
+    background-image: url(/assets/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.conteiner__pesquisar{
+    padding: 1em 0.5em;
+}
+.banner-slide{
+    z-index: 4;
+}
