@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -89,7 +90,8 @@
             <input type="search" class="conteiner__pesquisar-campo" placeholder="O que você busca?">
         </div>
         <div class="conteiner__banner-slide">
-            <div class="swiper banner-slide">
+            <a href="#"><img class="conteiner__banner-slide" src="/assets/banner.jpg" alt=""></a>
+            <!-- <div class="swiper banner-slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#"><img class="conteiner__banner-slide" src="/assets/banner02.jpg" alt=""></a>
@@ -106,29 +108,38 @@
                     <div class="swiper-slide">
                         <a href="#"><img class="conteiner__banner-slide" src="/assets/banner05.jpg" alt=""></a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="swiper-pagination conteiner__banner-indice-slide"></div>
         </div>
     </section>
-    <!-- <section class="carrossel">
-        <div class="conteiner__carrossel">
-            <h2 class="conteiner__carrossel-titulo">#étrend</h2>
-            <p class="conteiner__carrossel-texto">Veja o que está bombando</p>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">#étrend</h2>
+        <p class="carrossel-texto">Veja o que está bombando</p>
+          <div class="swiper carrossel-itens">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img class="carrossel-img" src="/assets/carrossel01.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="carrossel-img" src="/assets/carrossel02.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="carrossel-img" src="/assets/carrossel03.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="carrossel-img" src="/assets/carrossel04.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination conteiner__banner-indice-slide"></div>
 
-        </div>
-    </section> -->
-
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/src/slide.js">
-    </script>
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 5000,
-            },
+            spaceBetween: 40,
+            slidesPerView: 2,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
