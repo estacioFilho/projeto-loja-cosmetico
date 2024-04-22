@@ -19,5 +19,6 @@
     padding: 1em 0.5em;
 }
 .banner-slide{
+    width: 390px;
     z-index: 4;
 }
