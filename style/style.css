@@ -5,9 +5,10 @@
 @import url(/style/produto.css);
 @import url(/style/cuidados.css);
 @import url(/style/recomendacoes-card-profissionais.css);
+@import url(/style/newlatter.css);
 
 :root{
-    --fonte-titulo:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
     --cor-titulo-preto: #262626;
     --cor-paragrafo-cinza:#404040;
