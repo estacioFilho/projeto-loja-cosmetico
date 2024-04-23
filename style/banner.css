@@ -1,5 +1,11 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .conteiner__banner-slide{
-    width: 390px ;
+    justify-content: center;
+    width: 100% ;
     height: 440px;
     cursor: pointer;
 }
@@ -19,6 +25,6 @@
     padding: 1em 0.5em;
 }
 .banner-slide{
+    justify-content: center;
     width: 390px;
-    z-index: 4;
 }
