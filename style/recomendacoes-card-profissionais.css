@@ -1,0 +1,28 @@
+.carrossel-recomendacoes-profissional{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+   padding: 1em;
+}
+.carrosel-recomendacoes{
+
+width: 100%;
+}
+.carrossel-recomendacoes{
+    width: 250px;
+    height: 350px;
+}
+
+/* card de profissionais */
+
+.card-profissionais{
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+.card-profissional-img{
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    width:100%;
+}

@@ -4,6 +4,8 @@
 @import url(/style/carrossel.css);
 @import url(/style/produto.css);
 @import url(/style/cuidados.css);
+@import url(/style/recomendacoes-card-profissionais.css);
+
 :root{
     --fonte-titulo:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
