@@ -6,6 +6,7 @@
 @import url(/style/cuidados.css);
 @import url(/style/recomendacoes-card-profissionais.css);
 @import url(/style/newlatter.css);
+@import url(/style/rodape.css);
 
 :root{
     --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
