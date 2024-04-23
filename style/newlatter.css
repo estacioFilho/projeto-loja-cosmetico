@@ -1,0 +1,62 @@
+.newlatter{
+    margin-top: 4em;
+    width: 100%;
+    background-color: var(--cor-cinza-claro);
+}
+.newlatter__conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    padding: 3em 1em;
+}
+.newlatter__conteiner-titulo{
+    font-size: 28px;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--cor-titulo-preto);
+}
+.newlatter__conteiner-texto{
+    font-size: 12.8px;
+    color: var(--cor-paragrafo-cinza);
+    line-height: 1.5em;
+} 
+.newlatter__conteiner__cadastro-email{
+    justify-content: center;
+    display: flex;
+ 
+}
+.newlatter__conteiner__cadastro-email-email{
+    background-color: var(--cor-branco);
+    border: none;
+    width: 80%;
+    padding: 1em 2em;
+    border-radius: 22px 0 0 22px;
+}
+.icone-email-btn{
+    width: 30px;
+    height: 24px;
+}
+.newlatter__conteiner__cadastro-email-btn:hover{
+    opacity: 0.5;
+}
+.newlatter__conteiner__cadastro-email-btn{
+    width: 20%;
+    background-color: var(--cor-preto);
+    border: none;
+    border-radius: 0 22px 22px 0;
+}
+.newlatter__conteiner-texto-link{
+    color: var(--cor-titulo-preto);
+    text-decoration:underline;
+    font-weight: 500;
+}
+.newlatter__conteiner-redes-sociais-lista{
+    display: flex;
+    justify-content: space-evenly
+}
+.icone-redesocial{
+    width: 30px;
+    height: 30px;
+}
