@@ -2,8 +2,9 @@
 @import url(/style/header.css);
 @import url(/style/banner.css);
 @import url(/style/carrossel.css);
+@import url(/style/produto.css);
 :root{
-    --fonte-titulo: 'Franklin Gothic';
+    --fonte-titulo:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
     --cor-titulo-preto: #262626;
     --cor-paragrafo-cinza:#404040;

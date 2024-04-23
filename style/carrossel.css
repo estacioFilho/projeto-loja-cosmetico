@@ -1,16 +1,25 @@
+.carrossel{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    /* margin-left: 50px; */
+}
 .carrossel-img{
-    width: 200px;
-    height: 400px;
+    justify-content: center;
+    width: 170px;
+    height: 250px;
 }
 .carrossel-itens{
-    width: 390px;
+    justify-content: center;
+    width: 100%;
 }
 .carrossel-titulo{
+    font-family: var(--fonte-titulo);
     margin: 1em 0 0.5em 0.5em;
    font-size: 34px;
     font-weight: 700;
 }
 .carrossel-texto{
-    margin: 0 0 0.5em 1em;
+    margin: 0 0 1.5em 1em;
     font-size: 16px;
 }
