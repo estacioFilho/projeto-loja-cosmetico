@@ -3,6 +3,7 @@
 @import url(/style/banner.css);
 @import url(/style/carrossel.css);
 @import url(/style/produto.css);
+@import url(/style/cuidados.css);
 :root{
     --fonte-titulo:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
