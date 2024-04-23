@@ -1,0 +1,71 @@
+.rodape{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.rodap__menu{
+    width: 100%;
+}
+.lista-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    opacity: 0.8;
+}
+.rodape__menu-lista__sobre, .rodape__menu-lista__marca, .rodape__menu-lista__atendimento{
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-bottom: 0.5px solid var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    color: var(--cor-paragrafo-cinza);
+}
+.icone-seta{
+    background-image: url(/assets/seta-baixo.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.checkbox01, .checkbox02, .checkbox03{
+    display: none;
+}
+.rodape01, .rodape02, .rodape03{
+    display: none;
+}
+.checkbox01:checked ~ .icone-seta{
+    background-image: url(/assets/seta-cima.svg)
+}
+.checkbox02:checked ~ .icone-seta{
+    background-image: url(/assets/seta-cima.svg)
+}
+.checkbox03:checked ~ .icone-seta{
+    background-image: url(/assets/seta-cima.svg)
+}
+.rodape__menu-lista__atendimento-lista-tem{
+    font-size: 13px;
+    color: var(--cor-titulo-preto);
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    font-family:var(--fonte-paragrafo);
+    font-weight: 500;
+    
+}
+.rodape-conteiner{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rodape-conteiner__texto{
+    color: var(--cor-titulo-preto);
+    font-size: 12px;
+}
+.rodape-conteiner__logo{
+    width: 50px;
+    opacity: 0.5;
+}
