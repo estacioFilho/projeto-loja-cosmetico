@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.conteiner__banner-slide-mobile{
+    overflow: auto
+}
 .conteiner__banner-slide{
     justify-content: center;
     width: 100% ;
@@ -27,4 +30,18 @@
 .banner-slide{
     justify-content: center;
     width: 390px;
+}
+.conteiner__banner-slide-1024{
+    display: none;
+}
+
+@media (min-width:1024px){
+    .conteiner__banner-slide-mobile{
+        display: none;
+    }
+    .conteiner__banner-slide-1024{
+        overflow: auto;
+        display: block;
+        height: auto;
+    }
 }

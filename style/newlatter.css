@@ -60,3 +60,9 @@
     width: 30px;
     height: 30px;
 }
+@media (min-width:1024px) {
+    .newlatter__conteiner{
+        margin: auto 22%;
+        width: 500px;
+    }
+}

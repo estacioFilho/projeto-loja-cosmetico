@@ -5,12 +5,10 @@
    padding: 1em;
 }
 .carrosel-recomendacoes{
-
 width: 100%;
 }
 .carrossel-recomendacoes{
-    width: 250px;
-    height: 350px;
+    width: 130px;
 }
 
 /* card de profissionais */
@@ -25,4 +23,9 @@ width: 100%;
     align-items: center;
     margin-top: 4em;
     width:100%;
+}
+@media (min-width:1024px) {
+    .carrosel-recomendacoes{
+        width: 900px;
+    }
 }
