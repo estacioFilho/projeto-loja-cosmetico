@@ -1,5 +1,4 @@
-
-.cabecalho__promocao{
+.cabecalho__promocao {
     display: flex;
     width: 100%;
     height: 4em;
@@ -10,42 +9,52 @@
     align-items: center;
     justify-content: center;
 }
-.cabecalho__promocao__icone-promocao{
-    background-image: url(../assets/desconto.svg);
+
+.cabecalho__promocao__icone-promocao {
+    background-image: url(../assets/tickets-icon.svg);
     background-repeat: no-repeat;
-    width: 20px;
     height: 20px;
-    display: block;
+    width: 20px;
+    margin-right: 5px;
 }
-.cabecalho__promocao__texto-promocao{
+
+.cabecalho__promocao__texto-promocao {
     font-weight: 700;
+    margin: 0;
 }
-.cabecalho__promocao_destaque{
+
+.cabecalho__promocao_destaque {
     text-transform: uppercase;
 }
-.cabecalho__principal__lista_imagem{
+
+.cabecalho__principal__lista_imagem {
     width: 25px;
 }
-.cabecalho__principal__lista_logo{
+
+.cabecalho__principal__lista_logo {
     width: 100px;
 }
-.cabecalho__principal__lista{
+
+.cabecalho__principal__lista {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 0.5em;
 }
-.icone-20{
-    width: 20px ;
+
+.icone-20 {
+    width: 20px;
 }
 
-.cabecalho__principal__lista__sub-lista__item_usuario{
+.cabecalho__principal__lista__sub-lista__item_usuario {
     display: flex;
     align-items: center;
     gap: 0.5em;
 }
-.cabecalho__principal__lista__sub-lista__top{
-    
+
+.cabecalho__principal__lista__sub-lista__top {
+
     height: 5em;
     display: flex;
     align-items: center;
@@ -54,11 +63,13 @@
     border-top: 1px solid var(--cor-cinza-claro);
     border-bottom: 1px solid var(--cor-cinza-claro);
 }
-.cabecalho__principal__lista-item{
-    position:relative;
+
+.cabecalho__principal__lista-item {
+    position: relative;
     display: flex;
 }
-.cabecalho__principal__lista__sub-lista{
+
+.cabecalho__principal__lista__sub-lista {
     left: -56px;
     top: -50px;
     position: absolute;
@@ -69,14 +80,16 @@
     display: flex;
     flex-direction: column;
 }
-.cabecalho__principal__lista__sub-lista__item{
+
+.cabecalho__principal__lista__sub-lista__item {
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 1em 2em;
     height: 1em;
 }
-.cabecalho__principal__lista__sub-lista__bottom{
+
+.cabecalho__principal__lista__sub-lista__bottom {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
@@ -84,16 +97,19 @@
     gap: 2em;
     border-top: 1px solid var(--cor-cinza-claro);
 }
-.icone-10{
+
+.icone-10 {
     width: 1em;
 }
-.cabecalho__principal__sub-lista__conteiner{
+
+.cabecalho__principal__sub-lista__conteiner {
     display: flex;
     position: relative;
 }
-.cabecalho__principal__sub-lista__conteiner-fundo{
+
+.cabecalho__principal__sub-lista__conteiner-fundo {
     display: flex;
-    position:absolute;
+    position: absolute;
     right: -390px;
     top: -55px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -101,16 +117,19 @@
     height: 100vh;
 }
 
-.conteiner-menu{
+.conteiner-menu {
     display: none;
 }
-.cabecalho__principal__lista-checkbox:checked~.conteiner-menu{
+
+.cabecalho__principal__lista-checkbox:checked~.conteiner-menu {
     display: block;
 }
-.cabecalho__principal__lista_imagem-menu{
+
+.cabecalho__principal__lista_imagem-menu {
     width: 30px;
     height: 30px;
 }
+
 .label {
     position: absolute;
     top: -15px;
@@ -120,19 +139,105 @@
     height: 30px;
 }
 
-.cabecalho__principal__lista-checkbox:checked ~ .label {
+.cabecalho__principal__lista-checkbox:checked~.label {
     background-image: url(../assets/fechar.svg);
 }
 
-.cabecalho__principal__lista-checkbox:checked ~ .label {
+.cabecalho__principal__lista-checkbox:checked~.label {
     z-index: 2;
     position: relative;
     left: 320px;
 }
 
-.cabecalho__principal__lista__sub-lista__item p{
+.cabecalho__principal__lista__sub-lista__item p {
     font-weight: 700;
 }
-.cabecalho__principal__lista-checkbox{
+
+.cabecalho__principal__lista-checkbox {
     display: none;
 }
+
+.cabecalho__principal-1024, .cabecalho__principal-1024-categorias{
+    display: none;
+}
+
+
+@media (min-width:1024px){
+    body{
+        padding-top: 260px;
+    }
+    .cabecalho{
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        background-color: var(--cor-branco);
+    }
+    .cabecalho__promocao {
+        font-size: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .cabecalho__promocao__icone-promocao {
+        height: 30px;
+        width: 30px;
+    }
+
+    .cabecalho__principal__lista,
+    .conteiner__pesquisar {
+        display: none;
+    }
+
+    .cabecalho__principal-1024 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__principal-1024-logo {
+        width: 15%;
+    }
+
+    .cabecalho__principal-1024-pesquisar {
+        width: 40%;
+        padding: 0.5em  1em;
+        border: none;
+        background-color: var(--cor-cinza-claro);
+        border-radius: 22px;
+    }
+    .cabecalho__principal-1024-pesquisar::placeholder{
+        background-image: url(/assets/lupa.svg);
+        background-repeat: no-repeat;
+       background-position-x: 100%;
+    }
+    .cabecalho__principal-1024-icones {
+        display: flex;
+        width: 25%;
+        justify-content: space-evenly;
+    }
+
+    .cabecalho__principal-1024-icon {
+        display: block;
+        width: 30px;
+    }
+    .cabecalho__principal-1024-categorias{
+        display: block;
+        width: 100%;
+        border: 1px solid var(--cor-cinza-claro);
+    }
+    .cabecalho__principal-1024-categorias-lista{
+        margin: 0;
+        display: flex;
+        padding: 1em;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecalho__principal-1024-categorias-lista-itens{
+        font-size: 13px;
+        font-family: var(--fonte-titulo);
+        text-decoration: none;
+        color: var(--cor-titulo-preto);
+    }
+}   

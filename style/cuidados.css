@@ -22,7 +22,7 @@
     width: 100%;
 }
 .carrossel-cuidados-img{
-    width: 200px;
+    width: 130px;
 
 }
 
@@ -75,4 +75,21 @@
     width: 40%;
     border: none;
     border-radius: 22px;
+}
+@media (min-width: 1024px) {
+    .corrossel-cuidados__titulo{
+        font-size: 40px;
+    }
+    .carrossel-cuidados__texto{
+        font-size: 24px;
+    }
+    .carrossel-cuidados-swiper{
+        width: 700px;
+    }
+    .gif__conteiner{
+        display: flex;
+    }
+    .gif__conteiner-apresentacao{
+        padding:1em;
+    }
 }

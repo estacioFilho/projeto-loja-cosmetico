@@ -35,8 +35,7 @@
     left: 24%;
 }
 .produto__conteiner-botao{
-    position:relative;
-    right: 55%;
+    overflow: auto;
     font-size: 10px;
     width: 40%;
     font-weight: 700;
@@ -49,6 +48,7 @@
 }
 .produto__conteiner-avaliacao{
     width: 80px;
+    overflow: auto;
 }
 .produto__conteiner-titulo{
     font-size: 20px;
