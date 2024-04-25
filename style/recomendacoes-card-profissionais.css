@@ -1,31 +1,54 @@
 .carrossel-recomendacoes-profissional{
     display: flex;
     flex-direction: column;
-    gap: 3em;
-   padding: 1em;
+    padding: 1em;
+}
+.corrossel-recomendacoes__titulo{
+    font-size: 34px;
+    font-family: var(--fonte-titulo);
+
 }
 .carrosel-recomendacoes{
-width: 100%;
+    width: 100%;
 }
-.carrossel-recomendacoes{
-    width: 130px;
+.carrossel-recomendacoes-img{
+    width: 200px;
+    
+    
 }
+
 
 /* card de profissionais */
 
 .card-profissionais{
     display: flex;
     padding: 0;
-    width: 100%;
+    margin-top: 4em;    
 }
 .card-profissional-img{
     justify-content: center;
     align-items: center;
-    margin-top: 4em;
+    
     width:100%;
 }
 @media (min-width:1024px) {
     .carrosel-recomendacoes{
-        width: 900px;
+        width: 700px;
+    }
+    .corrossel-recomendacoes__titulo{
+       padding-left: 1.3em;
+    }
+    .card-profissional-img{
+        width: 70%;
+        margin: auto 15%;
+    }
+}
+@media (min-width:1249px)  {
+    .carrosel-recomendacoes{
+        padding-left: 10% ;
+        width: 1000px;
+    }
+    .carrossel-recomendacoes-img{
+        width: 250px;
     }
 }
