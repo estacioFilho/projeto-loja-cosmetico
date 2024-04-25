@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
-@import url(style/header.css);
-@import url(style/banner.css);
-@import url(style/carrossel.css);
-@import url(style/produto.css);
-@import url(style/cuidados.css);
-@import url(style/recomendacoes-card-profissionais.css);
-@import url(style/newlatter.css);
-@import url(style/rodape.css);
+@import url(/style/header.css);
+@import url(/style/banner.css);
+@import url(/style/carrossel.css);
+@import url(/style/produto.css);
+@import url(/style/cuidados.css);
+@import url(/style/recomendacoes-card-profissionais.css);
+@import url(/style/newlatter.css);
+@import url(/style/rodape.css);
 
 :root{
     --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
