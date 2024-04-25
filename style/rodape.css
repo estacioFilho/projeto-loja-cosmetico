@@ -14,6 +14,9 @@
     padding: 0.5em;
     opacity: 0.8;
 }
+.rodape__menu-lista{
+    padding: 0;
+}
 .rodape__menu-lista__sobre, .rodape__menu-lista__marca, .rodape__menu-lista__atendimento{
     padding: 0.5em 0.5em 0.5em 1em;
     border-bottom: 0.5px solid var(--cor-cinza);
@@ -69,6 +72,34 @@
     width: 50px;
     opacity: 0.5;
 }
+.rodap__menu-1024{
+    display: none;
+}
 @media (min-width:1024px) {
-    
+    .rodap__menu{
+        display: none;
+    }
+    .rodap__menu-1024{
+        padding-top:2em ;
+        display: block;
+    }
+    .rodape__menu-lista-1024{
+        
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .rodape__menu-lista-1024 h3{
+        padding-left: 1em;
+    }
+    .rodape__menu-lista__sobre-lista{
+        padding: 0;
+    }
+    .rodape__menu-lista__sobre-lista-1024{
+        padding: 0;
+    }
+}
+@media (min-width:1249px)  {
+    .newlatter__conteiner{
+        margin: auto 35%;
+    }
 }

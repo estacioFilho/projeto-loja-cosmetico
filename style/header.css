@@ -1,7 +1,8 @@
+
 .cabecalho__promocao {
     display: flex;
     width: 100%;
-    height: 4em;
+    padding: 0.5em 0;
     background-color: var(--cor-cinza);
     font-family: var(--fonte-paragrafo);
     font-size: 9px;
@@ -9,7 +10,55 @@
     align-items: center;
     justify-content: center;
 }
-
+/* ------ BOTÃO FLUTUANTE ------ */
+.cabecalho__principal{
+    position: relative;
+}
+.botao-flutuante{
+    position: fixed;
+    z-index: 3;
+    top: 70%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.botao-flutuante-msg{
+  
+ display: none;
+ background-color: var(--cor-cinza-claro);
+ width: 250px;
+ padding: 0.5em;
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px #aeaeaebb;
+}
+.botao-flutuante-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+}
+.botao-flutuante-img{
+    margin-left:250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #aeaeaebb;
+    position: relative;
+    z-index: 4;
+   background-image: url(/assets/whatsapp-preto.svg);
+   background-repeat: no-repeat;
+   width: 51px;
+   height: 50px;
+}
+.botao-flutuante-notificacao{
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+    font-size: 10px;
+    background-color: red;
+    font-weight: 700;
+    color: white;
+}
 .cabecalho__promocao__icone-promocao {
     background-image: url(../assets/tickets-icon.svg);
     background-repeat: no-repeat;
@@ -17,7 +66,13 @@
     width: 20px;
     margin-right: 5px;
 }
-
+.botao-flutuante:hover .botao-flutuante-img{
+    margin-left: 0;
+}
+.botao-flutuante:hover .botao-flutuante-msg{
+    display: block;
+    left: 25%;
+}
 .cabecalho__promocao__texto-promocao {
     font-weight: 700;
     margin: 0;
@@ -51,6 +106,9 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+}
+.cabecalho__principal__lista__sub-lista__item_usuario p{
+    margin: 0;
 }
 
 .cabecalho__principal__lista__sub-lista__top {
@@ -87,6 +145,9 @@
     align-items: center;
     padding: 1em 2em;
     height: 1em;
+}
+.cabecalho__principal__lista__sub-lista__item p{
+    margin: 0;
 }
 
 .cabecalho__principal__lista__sub-lista__bottom {
@@ -161,12 +222,15 @@
     display: none;
 }
 
+@media  (max-width:700px) and (min-width:1024px){
 
+}
 @media (min-width:1024px){
     body{
         padding-top: 260px;
     }
     .cabecalho{
+        width: 100%;
         z-index: 2;
         position: fixed;
         top: 0;
@@ -196,7 +260,7 @@
     }
 
     .cabecalho__principal-1024-logo {
-        width: 15%;
+        width: 10%;
     }
 
     .cabecalho__principal-1024-pesquisar {
@@ -212,6 +276,7 @@
        background-position-x: 100%;
     }
     .cabecalho__principal-1024-icones {
+        margin: 0;
         display: flex;
         width: 25%;
         justify-content: space-evenly;
@@ -239,5 +304,8 @@
         font-family: var(--fonte-titulo);
         text-decoration: none;
         color: var(--cor-titulo-preto);
+    }
+    .botao-flutuante{
+        left: 65%;
     }
 }   

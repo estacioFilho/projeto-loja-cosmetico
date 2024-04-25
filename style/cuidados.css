@@ -21,9 +21,18 @@
     padding: 0 1em;
     width: 100%;
 }
+.carrossel-cuidados-conteiner{
+    text-align: center;
+}
 .carrossel-cuidados-img{
-    width: 130px;
+    width: 170px;
 
+}
+.carrossel-cuidados-titulo h3{
+    padding-top: 0.5em;
+    font-size: 16px;
+    color: var(--cor-paragrafo-cinza);
+    
 }
 
 /* conteiner giff */
@@ -87,9 +96,25 @@
         width: 700px;
     }
     .gif__conteiner{
+        overflow: auto;
+        width: 90%;
+        margin: auto 5%;
         display: flex;
     }
+    .gif__conteiner-gif{
+        width: 50%;    
+    }
     .gif__conteiner-apresentacao{
+        width: 50%;
         padding:1em;
+    }
+}
+@media (min-width:1249px)  {
+    .carrossel-cuidados-swiper{
+        width: 1280px;
+    }
+    .gif__conteiner-apresentacao{
+        gap: 3em;
+        padding-top: 5%;
     }
 }

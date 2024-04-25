@@ -6,7 +6,7 @@
 }
 .carrossel-img{
     justify-content: center;
-    width: 130px;
+    width: 200px;
 }
 .carrossel-itens{
     justify-content: center;
@@ -22,7 +22,7 @@
     margin: 0 0 1.5em 1em;
     font-size: 16px;
 }
-@media(min-width:1024px) {
+@media (min-width:1024px) {
     .carrossel-titulo{
         font-size: 40px;
     }
@@ -30,6 +30,14 @@
         font-size: 24px;
     }
     .carrossel-itens{
-        width: 700px;
+        width: 80%;
+    }
+    .carrossel-img{
+        width: 250px;
+    }
+}
+@media (min-width:1249px)  {
+    .carrossel-itens{
+        width: 1280px;
     }
 }
