@@ -122,16 +122,17 @@
     border-bottom: 1px solid var(--cor-cinza-claro);
 }
 
-.cabecalho__principal__lista-item {
+.cabecalho__principal__lista-item{
     position: relative;
     display: flex;
 }
 
-.cabecalho__principal__lista__sub-lista {
+.cabecalho__principal__lista__sub-lista{
+    padding: 0;
     left: -56px;
-    top: -50px;
+    top: -40px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     width: 340px;
     height: 100vh;
     background-color: var(--cor-branco);
@@ -169,10 +170,10 @@
 }
 
 .cabecalho__principal__sub-lista__conteiner-fundo {
-    display: flex;
+    z-index: 1;
     position: absolute;
     right: -390px;
-    top: -55px;
+    top: -40px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 110px;
     height: 100vh;

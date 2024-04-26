@@ -4,6 +4,7 @@
     justify-content: center;
 }
 .conteiner__banner-slide-mobile{
+    z-index: 1;
     overflow: auto
 }
 .conteiner__banner-slide{
