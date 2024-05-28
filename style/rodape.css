@@ -10,14 +10,15 @@
 .lista-rodape{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0.5em;
+    align-items: center;
     opacity: 0.8;
+    font-size: 24;
 }
 .rodape__menu-lista{
     padding: 0;
 }
-.rodape__menu-lista__sobre, .rodape__menu-lista__marca, .rodape__menu-lista__atendimento{
+.dropdown__list__item{
     padding: 0.5em 0.5em 0.5em 1em;
     border-bottom: 0.5px solid var(--cor-cinza);
     display: flex;
@@ -32,10 +33,10 @@
     width: 20px;
     height: 20px;
 }
-.checkbox01, .checkbox02, .checkbox03{
+.checkbox{
     display: none;
 }
-.rodape01, .rodape02, .rodape03{
+.rodape{
     display: none;
 }
 .checkbox01:checked ~ .icone-seta{
@@ -47,13 +48,11 @@
 .checkbox03:checked ~ .icone-seta{
     background-image: url(/assets/seta-cima.svg)
 }
-.rodape__menu-lista__atendimento-lista-tem{
-    font-size: 13px;
-    color: var(--cor-titulo-preto);
-    padding: 0.5em 0.5em 0.5em 2.5em;
-    font-family:var(--fonte-paragrafo);
-    font-weight: 500;
-    
+.dropdown__conteiner-eq{
+   font-weight: 700;
+}
+.dropdown-menu-eq{
+    padding: 0 1em;
 }
 .rodape-conteiner{
     padding: 1em;
