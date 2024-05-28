@@ -2,116 +2,134 @@
     "produtos": [
         {
             "id": 0,
-            "imagens": [],
-            "Categoria": "cuidados diários",
+            "imagens": ["https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-frente-800.jpeg?raw=true","https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-verso-800.jpeg?raw=true","https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-aplicacao-800.jpeg?raw=true"],
+            "Categoria": "cuidados_diarios",
             "nome": "Shampoo Uso Obrigatório 300ml",
-            "Avaliacoes": "2",
-            "preco": "109.99",
-            "desconto": "0.27",
+            "Avaliacoes": 2,
+            "preco": 109.99,
+            "desconto": 0.27,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio-tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo-usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 1,
-            "imagens": [],
-            "Categoria": "cuidados diários",
+            "imagens": [
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/co-uso-obrigatorio-plus-frent-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/co-uso-obrigatorio-plus-verso-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg?raw=true"
+            ],
+            "Categoria": "cuidados-diarios",
             "nome": "Condicionador Uso Obrigatório Plus+ 300ml",
-            "Avaliacoes": "3",
-            "preco": "119.99",
-            "desconto": "0",
+            "Avaliacoes": 3,
+            "preco": 119.99,
+            "desconto": 0,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 2,
-            "imagens": [],
+            "imagens": ["https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/mask-net-mask.png?raw=true"],
             "Categoria": "tratamentos",
             "nome": "Net Mask 550g",
-            "Avaliacoes": "5",
-            "preco": "299.99",
-            "desconto": "0",
+            "Avaliacoes": 5,
+            "preco": 299.99,
+            "desconto": 0,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 3,
-            "imagens": [],
+            "imagens": [
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/rec-uso-obrigatorio-frent-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/rec-uso-obrigatorio-verso-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/rec-uso-obrigatorio-aplic-800.jpeg?raw=true"
+            ],
             "Categoria": "tratamentos",
-            "nome": "Uso Obrigatório; 260ml",
-            "Avaliacoes": "11",
-            "preco": "119.99",
-            "desconto": "0.25",
+            "nome": "Uso Obrigatório 260ml",
+            "Avaliacoes": 11,
+            "preco": 119.99,
+            "desconto": 0.25,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 4,
-            "imagens": [],
+            "imagens": [
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/oleo-illuminate-frente.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/oleo-illuminate-verso.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/rec-uso-obrigatorio-aplic-800.jpeg?raw=true"
+            ],
             "Categoria": "finalizadores",
             "nome": "Illuminatte Oil 60ml",
-            "Avaliacoes": "5",
-            "preco": "139.99",
-            "desconto": "0",
+            "Avaliacoes": 5,
+            "preco": 139.99,
+            "desconto": 0,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 5,
-            "imagens": [],
+            "imagens": [
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/kit-uso-obrigatorio-frente-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/kit-uso-obrigatorio-verso.jpeg?raw=true"
+            ],
             "Categoria": "kits",
             "nome": "Kit Frizz Zero",
-            "Avaliacoes": "11",
-            "preco": "389.97",
-            "desconto": "0.05",
+            "Avaliacoes": 18,
+            "preco": 389.97,
+            "desconto": 0.05,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
-        },
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         },
         {
             "id": 6,
-            "imagens": [],
+            "imagens": [
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/fix-shine-frent-800.jpeg?raw=true",
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/fix-shine-verso-800.jpeg?raw=true", 
+                "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/fix-shine-aplicacao-800.jpeg?raw=true"
+            ],
             "Categoria": "finalizadores",
             "nome": "Shine Fix 450ml",
-            "Avaliacoes": "6",
-            "preco": "149.99",
-            "desconto": "0",
+            "Avaliacoes": 6,
+            "preco": 149.99,
+            "desconto": 0,
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem. Ut euismod consectetur metus in viverra. Curabitur urna est, lobortis in diam in, tempor convallis est. Nunc sit amet efficitur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet ipsum nisi. Pellentesque varius ante quis dictum ultrices. Duis posuere bibendum semper. Aliquam velit est, ultrices vitae odio sed, fringilla dapibus ligula. Donec congue tincidunt lorem eget tincidunt. Donec quis magna ut elit posuere pharetra in at augue. Donec pretium auctor porta. Nulla lacinia sapien nec erat luctus, eu egestas mi scelerisque.Fusce quis orci sodales, venenatis leo sit amet, faucibus massa. Cras sagittis consectetur risus ac ultricies. Sed maximus est non fringilla dapibus. Donec rutrum sapien quis enim mollis aliquam. Vivamus a risus vulputate, tempus leo ac, blandit sem. Praesent ac eros pharetra nunc feugiat ultricies sed et libero. Etiam rutrum enim sed urna placerat posuere.Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet",
-            "principiosAtivos": {
-                "principioUm": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioDois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
-                "principioTres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
+            "principios_ativos": {
+                "principio_um": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_dois": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem.",
+                "principio_tres": "ullam molestie risus finibus justo vestibulum tristique. Vivamus a sapien interdum, posuere est a, egestas lorem."
             },
-            "modoUsar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
+            "modo_usar": "Suspendisse posuere sed elit sed lacinia. Proin commodo lacus vel facilisis pharetra. Suspendisse vestibulum dolor elit, id dapibus dolor scelerisque a. Duis finibus, velit ut placerat vehicula, arcu ante mollis libero, vitae laoreet lorem sem quis sapien."
         }
     ]
 }
