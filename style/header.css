@@ -237,9 +237,6 @@
     display: none;
 }
 
-@media  (max-width:700px) and (min-width:1024px){
-
-}
 @media (min-width:1024px){
     body{
         padding-top: 260px;
@@ -288,7 +285,7 @@
     .cabecalho__principal-1024-pesquisar::placeholder{
         background-image: url(/assets/lupa.svg);
         background-repeat: no-repeat;
-       background-position-x: 100%;
+        background-position-x: 100%;
     }
     .cabecalho__principal-1024-icones {
         margin: 0;

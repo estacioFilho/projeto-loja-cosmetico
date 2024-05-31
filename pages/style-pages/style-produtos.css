@@ -1,0 +1,287 @@
+@import url("/style/style.css");
+.conteiner-produtos-header{
+    width: 100%;
+    padding: 1.5em 0.5em;
+}
+.header-produtos{
+    display: flex;
+    padding: 0;
+}
+.header-produtos-item{
+    display: flex;
+    align-items: center;
+}
+.icon-arrow-rigth{
+    background-image: url(/assets/arrow-rigth-smal.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.header-produtos-item-link{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.6em;
+    color: var(--cor-titulo-preto);
+}
+.title-page{
+    width: 100%;
+    font-size: 1.5em;
+}
+.descricao-page{
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.headingline-produtos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--cor-cinza-claro);
+    padding: 0 0.5em;
+}
+.filter-produtos, .Relevancia-produtos{
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}
+.filter-produtos h3, .Relevancia-produtos h3{
+    font-size: 110%;
+    padding: 1em 0;
+    margin: 0;
+}
+.icone-filter{
+    background-image: url(/assets/filter.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.icone-arrow-down{
+    background-image: url(/assets/seta-baixo.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.produtos{
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 0.5em;
+}
+.produto{
+    padding: 0.5em;
+    border: 2px solid var(--cor-cinza-claro);
+    width: 48%;
+}
+.apresentacao-produto{
+    position: relative;
+    display: flex;
+}
+.desconto{
+    position: absolute;
+    right: 80%;
+    box-shadow: 0px 2px 2px var(--cor-cinza);
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: var(--cor-titulo-preto);
+    color: var(--cor-cinza-claro);
+    padding: 0 0.5em;
+}
+.imagem-produto{
+    width: 100%;
+}
+.icone-coracao{
+    position: absolute;
+    left: 85%;
+    background-image: url(/assets/coracao.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.avaliacao-produto{
+    margin: 1em 0;
+    font-size: 17px;
+    display: flex;
+    gap: 0.5em;
+}
+.icone-avaliacao{
+    background-image: url(/assets/avaliacao.svg);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 18px;
+   
+}
+.titulo-produto{
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: 700;
+}
+.descricao-produto{
+    font-size: 0.8em;
+}
+.preco-produto{
+    font-size: 0.8em;
+    color: var(---cor-paragrafo-cinza);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.preco-avista strong, .preco-parcelado strong{
+    font-size: 16px;
+    font-weight: 500;
+}
+.preco-avista, .preco-parcelado{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 0.8em;
+}
+.area-button{
+    width: 100%;
+    height: 60px;
+}
+.button-produto{
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em 0;
+    background-color: var(--cor-titulo-preto);
+    border-radius: 25px;
+    color: var(--cor-branco);
+}
+
+@media (min-width: 800px) and (max-width:1200px){
+    body{
+        padding-top: 180px;
+    }
+    .button-produto{
+        display: none;
+    }
+    .titulo-produto{
+        font-size: 1.3em;
+    }
+    .descricao-produto{
+        font-size: 1em;
+    }
+    .preco-produto{
+        font-size: 1em;
+      
+    }
+    .preco-avista strong, .preco-parcelado strong{
+        font-size: 1.3em;
+    }
+    .icone-coracao:hover{
+        background-image: url(/assets/coracao-preenchido.svg);
+        width: 24px;
+        height: 24px;
+    }
+    .produto{
+        width: 32%;
+    }
+    .icone-coracao{
+        left: 90%;
+    }
+    .desconto{
+        right: 85%;
+        font-size: 14px;
+    }
+    .produto:hover .button-produto{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em 0;
+    }
+    .button-produto:hover{
+        transition: 0.5s;
+        background-color: var(--cor-branco);
+        border: 1px solid var(--cor-titulo-preto);
+        color: var(--cor-titulo-preto);
+    }
+    .button-produto:hover .icone-cadeado{
+        transition: 0.5s;
+        background-image: url(/assets/lock_open.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    .header-produtos-item-link{
+        font-size: 0.8em;
+    }
+    .title-page{
+        font-size: 2em;
+    }
+    .descricao-page{
+        font-size: 1.3em;
+    }
+
+}
+@media (min-width: 1201px){
+    body{
+        padding-top: 200px;
+    }
+    .header-produtos-item-link{
+        font-size: 0.8em;
+    }
+    .title-page{
+        font-size: 2em;
+    }
+    .descricao-page{
+        font-size: 1.3em;
+    }
+    .produto{
+        width: 24%;
+    }
+    .titulo-produto{
+        font-size: 1.5em;
+    }
+    .descricao-produto{
+        font-size: 1em;
+    }
+    .preco-produto{
+        font-size: 1em;
+      
+    }
+    .preco-avista strong, .preco-parcelado strong{
+        font-size: 1.3em;
+    }
+    .icone-coracao:hover{
+        background-image: url(/assets/coracao-preenchido.svg);
+        width: 24px;
+        height: 24px;
+    }
+    .button-produto{
+        display: none;
+    }
+    .produto:hover .button-produto{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em 0;
+    }
+    .button-produto:hover{
+        transition: 0.5s;
+        background-color: var(--cor-branco);
+        border: 1px solid var(--cor-titulo-preto);
+        color: var(--cor-titulo-preto);
+    }
+    .button-produto:hover .icone-cadeado{
+        transition: 0.5s;
+        background-image: url(/assets/lock_open.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+} 
