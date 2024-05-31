@@ -7,7 +7,7 @@
 @import url(/style/recomendacoes-card-profissionais.css);
 @import url(/style/newlatter.css);
 @import url(/style/rodape.css);
-
+@import url(/pages/style-pages/style-produtos.css);
 :root{
     --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
@@ -25,7 +25,6 @@
 
 }
 body{
-    
     font-family: var(--fonte-paragrafo);
     font-size: 14px;
     font-weight: 400;
