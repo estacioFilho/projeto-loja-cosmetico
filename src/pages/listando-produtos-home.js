@@ -1,18 +1,15 @@
 import listaPordutos from "../conexao.js"
 
 
-const areaProdutos = document.getElementById('lista-produtos');
-const parginaDestaque = document.getElementById('pagina_destaque');
-const tituloPagina = document.getElementById('titulo_pagina');
+const areaProdutos = document.getElementById('area-produtos');
+const sacola = document.getElementById('filtro-back');
     document.addEventListener('DOMContentLoaded', async function(){
         try{
-            parginaDestaque.textContent = "Kits"
-            tituloPagina.textContent = "Kits"
-            parginaDestaque.style.opacity = 0.8;
+            let count = 0
             const produtos = await listaPordutos();
             produtos.forEach(item => {
                 let visibilidadeDesconto = item.desconto == 0 ? "none": '';
-                if(item.Categoria == "kits"){
+                if(count < 3){
                     areaProdutos.innerHTML += `
                         <div class="produto">
                         <div class="apresentacao-produto">
@@ -36,12 +33,13 @@ const tituloPagina = document.getElementById('titulo_pagina');
                         </div>
                         </div>
                         `
+                        count++
                 }
                 
             });
             document.querySelectorAll('.button-produto').forEach((botao, index) => {
                 botao.addEventListener('click', () => {
-                    const item = produtos.filter(produto => produto.Categoria == "kits" )[index]; 
+                    const item = produtos.filter(produto => produto.Categoria )[index]; 
                     const produtoAdicionado = {
                         imagem: item.imagens[0],
                         nome: item.nome,
@@ -49,10 +47,14 @@ const tituloPagina = document.getElementById('titulo_pagina');
                         desconto: item.desconto
     
                     }
-    
+                    console.log(`${item.preco} ${item.desconto}`)
                     let produtosAdicionados = JSON.parse(localStorage.getItem('sacolaCompras')) || [];
                     produtosAdicionados.push(produtoAdicionado);
                     localStorage.setItem('sacolaCompras', JSON.stringify(produtosAdicionados));
+                    this.location.reload(true);
+                    
+                    
+                    
                 });
             });
     

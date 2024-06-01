@@ -8,6 +8,8 @@
 @import url(/style/newlatter.css);
 @import url(/style/rodape.css);
 @import url(/pages/style-pages/style-produtos.css);
+@import url(/style/sacola.css);
+@import url(/style/campoPesquisa.css);
 :root{
     --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;

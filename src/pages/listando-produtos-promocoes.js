@@ -4,15 +4,15 @@ import listaPordutos from "../conexao.js"
 const areaProdutos = document.getElementById('lista-produtos');
 const parginaDestaque = document.getElementById('pagina_destaque');
 const tituloPagina = document.getElementById('titulo_pagina');
-    document.addEventListener('DOMContentLoaded', async function(){
-        try{
-            parginaDestaque.textContent = "Promoções"
-            tituloPagina.textContent = "Promoções"
-            parginaDestaque.style.opacity = 0.8;
-            const produtos = await listaPordutos();
-            produtos.forEach(item => {
-                if(item.desconto){
-                    areaProdutos.innerHTML += `
+document.addEventListener('DOMContentLoaded', async function () {
+    try {
+        parginaDestaque.textContent = "Promoções"
+        tituloPagina.textContent = "Promoções"
+        parginaDestaque.style.opacity = 0.8;
+        const produtos = await listaPordutos();
+        produtos.forEach(item => {
+            if (item.desconto) {
+                areaProdutos.innerHTML += `
                         <div class="produto">
                         <div class="apresentacao-produto">
                         <span class="desconto">-${item.desconto * 100}%</span>
@@ -31,17 +31,35 @@ const tituloPagina = document.getElementById('titulo_pagina');
                         </div>
                         </div>
                         <div class="area-button">
-                        <button class="button-produto"><div class="icone-cadeado"></div><span>COMPRAR</span></button>
+                        <button class="button-produto" id="button-produto" ><div class="icone-cadeado"></div><span>COMPRAR</span></button>
                         </div>
                         </div>
                         `
+
+            }
+
+
+
+        });
+        document.querySelectorAll('.button-produto').forEach((botao, index) => {
+            botao.addEventListener('click', () => {
+                const item = produtos.filter(produto => produto.desconto)[index]; 
+                const produtoAdicionado = {
+                    imagem: item.imagens[0],
+                    nome: item.nome,
+                    preco: item.preco,
+                    desconto: item.desconto * 100
+
                 }
-                
+
+                let produtosAdicionados = JSON.parse(localStorage.getItem('sacolaCompras')) || [];
+                produtosAdicionados.push(produtoAdicionado);
+                localStorage.setItem('sacolaCompras', JSON.stringify(produtosAdicionados));
             });
-    
-        }catch(e){
-            areaProdutos.innerHTML= `<h3>${e}:Nenhum produto encontrado =(</h3>`
-        }
-    
-    })
+        });
+
+    } catch (e) {
+        areaProdutos.innerHTML = `<h3>${e}:Nenhum produto encontrado =(</h3>`
+    }
+})
 

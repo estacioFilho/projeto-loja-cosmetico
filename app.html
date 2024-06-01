@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conteiner{
+        display: flex;
+        text-align: center;
+        height: 100vh;
+        justify-content: center;
+    }
+    .background-line{
+        width: 400px;
+        height: 16px;
+        background-color: rgb(246, 243, 243);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 5px 5px 40px #888888;
+    }
+    .icone-line{
+        background-color: rgb(201, 84, 1);
+        border-radius: 10px;
+        width: 0%;
+        height: 15px;
+    
+    }
+    
+</style>
+<body>
+    <div class="conteiner">
+        <div class="background-line">
+            <div class="icone-line"></div>
+        </div>
+    </div>
+</body>
+<script>
+    const progresso = document.getElementsByClassName('icone-line')[0];
+    progresso.style.width = "100%"
+</script>
+</html>

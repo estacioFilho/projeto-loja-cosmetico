@@ -82,19 +82,18 @@
         padding-top:2em ;
         display: block;
     }
-    .rodape__menu-lista-1024{
-        
+    .rodape__menu-lista-1024-area{
         display: flex;
         justify-content: space-evenly;
-    }
-    .rodape__menu-lista-1024 h3{
-        padding-left: 1em;
     }
     .rodape__menu-lista__sobre-lista{
         padding: 0;
     }
     .rodape__menu-lista__sobre-lista-1024{
-        padding: 0;
+        padding-left: 1em;
+    }
+    .rodape__menu-lista__sobre-lista-1024 h3{
+        font-size: 20px;
     }
 }
 @media (min-width:1249px)  {

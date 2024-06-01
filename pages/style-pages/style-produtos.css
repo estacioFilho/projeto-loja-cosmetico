@@ -1,4 +1,8 @@
 @import url("/style/style.css");
+.produtos-adicionados-sacola{
+    overflow: hidden;
+    overflow-y: auto;
+}
 .conteiner-produtos-header{
     width: 100%;
     padding: 1.5em 0.5em;
@@ -31,8 +35,17 @@
     font-size: 1em;
     margin: 0;
 }
-
-
+.quatidade-valor-produto{
+    display: flex;
+}
+.precos-produto{
+    display: flex;
+    gap: 0.5em;
+}
+.preco_desconto_aplicado{
+    font-size: 16px;
+    text-decoration:line-through;
+}
 .headingline-produtos{
     width: 100%;
     display: flex;

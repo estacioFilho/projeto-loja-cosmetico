@@ -1,0 +1,32 @@
+.conteiner__pesquisar{
+    position: relative;
+}
+.lista-produtos-pesquisados{
+    width: 95%;
+    background-color: var(--cor-branco);
+    padding: 0;
+    box-shadow: -1px 5px 20px var(--cor-titulo-preto);
+    position: absolute;
+    z-index: 4;
+    border-radius: 5px;
+}
+.item-encontrado-campo-pesquisa{
+    display: flex;
+    padding: 0.5em 0;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+}
+.imagem-pesquisada{
+    width: 20%;
+}
+.descricao-categoria-campo-pesquisa{
+    text-decoration: none;
+    color: var(--cor-titulo-preto);
+    font-size: 12px;
+    margin: 0;
+}
+.titulo-produto-campo-pesquisa{
+    font-size: 16px;
+    margin: 0
+}

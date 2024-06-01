@@ -24,14 +24,15 @@
                 
         <div class="cabecalho__principal">
             <div class="cabecalho__principal-1024">
-                <img class="cabecalho__principal-1024-logo" src="../assets/logo-truss.png" alt="logo-truss">
+                <a href="/index.html" style="cursor: pointer;"><img class="cabecalho__principal-1024-logo" src="/assets/logo-truss.png"
+                    alt="logo da truss"></a>
                 <input class="cabecalho__principal-1024-pesquisar" placeholder="O que você busca?" type="search">
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/plus.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/usuario.png" class="cabecalho__principal-1024-icon" alt="icone""></li>
                     <li ><img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
+                    <li><a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></a></li>
                 </ul>
             </div>
             <div class="cabecalho__principal-1024-categorias">
@@ -87,7 +88,7 @@
                                 </label>
                                 <div class="dropdown-eq">
                                     <ul class="dropdown__conteiner-eq">
-                                        <li>V<a href="cuidados.html">Ver tudo</a></li>
+                                        <li><a href="cuidados.html">Ver tudo</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -155,15 +156,48 @@
                     </div>
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss">
+                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss"></a>
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola">
+                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola"></a>
                 </li>
             </ul>
-            
+            <div class="filtro-back" id="filtro-back">
+                <div class="sacola_compras" id="sacola_compras">
+                    <div class="cabecalho-sacola">
+                        <label for="checkbox-sacola">
+                            <input type="checkbox" class="checkbox-sacola" id="checkbox-sacola" >
+                            <div class="icone-fechar-sacola"></div>
+                        </label>
+                        <h3 class="titulo-sacola">Sua Sacola</h3>
+                    </div>
+                    <ul class="produtos-adicionados-sacola" id="produtos-adicionados">
+                    </ul>
+                    <div class="rodape-sacola">
+                        <div class="subtitulos-rodape">
+                            <h4 class="titulo-rodape">TOTAL</h4>
+                            <h4 class="titulo-rodape" id="titulo-rodape-sacola"></h4>
+                        </div>
+                        <div class="fundo">
+                            <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
+                        </div>
+                        <   <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar <strong>FRETE
+                            GRÁTIS</strong></p>
+                        <div class="botoes-sacola">
+                            <button class="botao-continuar"><a class="link-botao-continua" href="#">continuar
+                                    comprando</a></button>
+                            <button class="botao-finalizar-compra">finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <div class="conteiner__pesquisar">
+        <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa" placeholder="O que você busca?">
+        <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
+        </ul>
+    </div>
     <main class="conteiner-produtos">
         <div class="conteiner-produtos-header">
             <ul class="header-produtos">
@@ -322,6 +356,8 @@
     <script src="../src/menu-dropdown.js"></script>
     <script src="../src/floating-button.js"></script>
     <script type="module" src="../src/pages/listando-produtos-finalizadores.js"></script>
+    <script type="module" src="../src/sacola.js"></script>
+    <script type="module" src="../src/campoPesquisa.js"></script>
 </body>
 
 </html>
