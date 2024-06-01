@@ -39,6 +39,22 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
 
         });
+        document.querySelectorAll('.button-produto').forEach((botao, index) => {
+            botao.addEventListener('click', () => {
+                const item = produtos.filter(produto => produto.Categoria == "finalizadores" )[index]; 
+                const produtoAdicionado = {
+                    imagem: item.imagens[0],
+                    nome: item.nome,
+                    preco: item.preco,
+                    desconto: item.desconto
+
+                }
+
+                let produtosAdicionados = JSON.parse(localStorage.getItem('sacolaCompras')) || [];
+                produtosAdicionados.push(produtoAdicionado);
+                localStorage.setItem('sacolaCompras', JSON.stringify(produtosAdicionados));
+            });
+        });
 
     } catch (e) {
         areaProdutos.innerHTML = `<h3>${e}:Nenhum produto encontrado =(</h3>`

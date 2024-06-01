@@ -12,7 +12,7 @@ const tituloPagina = document.getElementById('titulo_pagina');
             const produtos = await listaPordutos();
             produtos.forEach(item => {
                 let visibilidadeDesconto = item.desconto == 0 ? "none": '';
-                if(item.Categoria == "cuidados_diarios"){
+                if(item.Categoria == "cuidados"){
                     areaProdutos.innerHTML += `
                         <div class="produto">
                         <div class="apresentacao-produto">
@@ -38,6 +38,22 @@ const tituloPagina = document.getElementById('titulo_pagina');
                         `
                 }
                 
+            });
+            document.querySelectorAll('.button-produto').forEach((botao, index) => {
+                botao.addEventListener('click', () => {
+                    const item = produtos.filter(produto => produto.Categoria == "cuidados" )[index]; 
+                    const produtoAdicionado = {
+                        imagem: item.imagens[0],
+                        nome: item.nome,
+                        preco: item.preco,
+                        desconto: item.desconto
+    
+                    }
+    
+                    let produtosAdicionados = JSON.parse(localStorage.getItem('sacolaCompras')) || [];
+                    produtosAdicionados.push(produtoAdicionado);
+                    localStorage.setItem('sacolaCompras', JSON.stringify(produtosAdicionados));
+                });
             });
     
         }catch(e){

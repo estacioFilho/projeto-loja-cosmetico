@@ -24,14 +24,15 @@
                 
         <div class="cabecalho__principal">
             <div class="cabecalho__principal-1024">
-                <img class="cabecalho__principal-1024-logo" src="../assets/logo-truss.png" alt="logo-truss">
+                <a href="/index.html" style="cursor: pointer;"><img class="cabecalho__principal-1024-logo" src="/assets/logo-truss.png"
+                    alt="logo da truss"></a>
                 <input class="cabecalho__principal-1024-pesquisar" placeholder="O que você busca?" type="search">
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/plus.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/usuario.png" class="cabecalho__principal-1024-icon" alt="icone""></li>
                     <li ><img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
+                    <li><a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></a></li>
                 </ul>
             </div>
             <div class="cabecalho__principal-1024-categorias">
@@ -87,7 +88,7 @@
                                 </label>
                                 <div class="dropdown-eq">
                                     <ul class="dropdown__conteiner-eq">
-                                        <li>V<a href="cuidados.html">Ver tudo</a></li>
+                                        <li><a href="cuidados.html">Ver tudo</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -158,12 +159,81 @@
                     <img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss">
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola">
+                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola"></a>
                 </li>
             </ul>
-            
+            <div class="filtro-back" id="filtro-back">
+                <div class="sacola_compras" id="sacola_compras">
+                    <div class="cabecalho-sacola">
+                        <label for="checkbox-sacola">
+                            <input type="checkbox" class="checkbox-sacola" id="checkbox-sacola" >
+                            <div class="icone-fechar-sacola"></div>
+                        </label>
+                        <h3 class="titulo-sacola">Sua Sacola</h3>
+                    </div>
+                    <ul class="produtos-adicionados-sacola" id="produtos-adicionados">
+                        <li class="produto-adicionando-sacola">
+                            <img class="imagem-produto-sacola" src="/assets/mask-net-mask.png" alt="mascara">
+                            <div class="conteiner-produto-adicionanado">
+                                <div class="titulo-produto-sacola">
+                                    <p class="nome-produto-sacola">Mask Net 500g</p>
+                                    <div class="icone-lixeira-sacola"></div>
+                                </div>
+                                <div class="quatidade-valor-produto">
+                                    <select class="quatidade-produto" name="select">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                    <p>R$ 139.99</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="rodape-sacola">
+                        <div class="subtitulos-rodape">
+                            <h4 class="titulo-rodape">TOTAL</h4>
+                            <h4 class="titulo-rodape" id="titulo-rodape-sacola">R$ 159.88</h4>
+                        </div>
+                        <div class="fundo">
+                            <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
+                        </div>
+                        <p class="info-progresso-frete">Faltam <strong>R$40.00</strong> para ganhar <strong>FRETE
+                                GRÁTIS</strong></p>
+                        <div class="botoes-sacola">
+                            <button class="botao-continuar"><a class="link-botao-continua" href="#">continuar
+                                    comprando</a></button>
+                            <button class="botao-finalizar-compra">finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <div class="conteiner__pesquisar">
+        <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa" placeholder="O que você busca?">
+        <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
+            <li class="item-encontrado-campo-pesquisa">               
+                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
+                <div class="area-conteiner-campo-pesquisa">
+                    <a href="pages/cuidados.html" class="descricao-categoria-campo-pesquisa">Cuidados</a>
+                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
+                </div>
+            </li>
+            <li class="item-encontrado-campo-pesquisa">               
+                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
+                <div class="area-conteiner-campo-pesquisa">
+                    <a href="" class="descricao-categoria-campo-pesquisa">Cuidados</a>
+                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
     <main class="conteiner-produtos">
         <div class="conteiner-produtos-header">
             <ul class="header-produtos">
@@ -321,6 +391,8 @@
     <script src="../src/menu-dropdown.js"></script>
     <script src="../src/floating-button.js"></script>
     <script type="module" src="../src/pages/listando-produtos-cuidados.js"></script>
+    <script type="module" src="../src/sacola.js"></script>
+    <script type="module" src="../src/campoPesquisa.js"></script>
 </body>
 
 </html>

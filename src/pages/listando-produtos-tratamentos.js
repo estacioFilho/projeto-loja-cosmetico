@@ -4,6 +4,7 @@ import listaPordutos from "../conexao.js"
 const areaProdutos = document.getElementById('lista-produtos');
 const parginaDestaque = document.getElementById('pagina_destaque');
 const tituloPagina = document.getElementById('titulo_pagina');
+const sacola = document.getElementById('filtro-back');
     document.addEventListener('DOMContentLoaded', async function(){
         try{
             parginaDestaque.textContent = "Tratamento"
@@ -38,6 +39,26 @@ const tituloPagina = document.getElementById('titulo_pagina');
                         `
                 }
                 
+            });
+            document.querySelectorAll('.button-produto').forEach((botao, index) => {
+                botao.addEventListener('click', () => {
+                    const item = produtos.filter(produto => produto.Categoria == "tratamentos" )[index]; 
+                    const produtoAdicionado = {
+                        imagem: item.imagens[0],
+                        nome: item.nome,
+                        preco: item.preco,
+                        desconto: item.desconto
+    
+                    }
+                    console.log(`${item.preco} ${item.desconto}`)
+                    let produtosAdicionados = JSON.parse(localStorage.getItem('sacolaCompras')) || [];
+                    produtosAdicionados.push(produtoAdicionado);
+                    localStorage.setItem('sacolaCompras', JSON.stringify(produtosAdicionados));
+                    sacola.style.display = "block"
+                         
+                    
+                    
+                });
             });
     
         }catch(e){

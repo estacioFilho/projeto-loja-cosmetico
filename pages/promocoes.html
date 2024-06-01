@@ -24,14 +24,15 @@
                 
         <div class="cabecalho__principal">
             <div class="cabecalho__principal-1024">
-                <img class="cabecalho__principal-1024-logo" src="../assets/logo-truss.png" alt="logo-truss">
+                <a href="/index.html" style="cursor: pointer;"><img class="cabecalho__principal-1024-logo" src="/assets/logo-truss.png"
+                    alt="logo da truss"></a>
                 <input class="cabecalho__principal-1024-pesquisar" placeholder="O que você busca?" type="search">
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/plus.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/usuario.png" class="cabecalho__principal-1024-icon" alt="icone""></li>
                     <li ><img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
+                    <li><a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></a></li>
                 </ul>
             </div>
             <div class="cabecalho__principal-1024-categorias">
@@ -155,15 +156,63 @@
                     </div>
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss">
+                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss"></a>
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola">
+                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola"></a>
                 </li>
             </ul>
-            
+            <div class="filtro-back" id="filtro-back">
+                <div class="sacola_compras" id="sacola_compras">
+                    <div class="cabecalho-sacola">
+                        <label for="checkbox-sacola">
+                            <input type="checkbox" class="checkbox-sacola" id="checkbox-sacola" >
+                            <div class="icone-fechar-sacola"></div>
+                        </label>
+                        <h3 class="titulo-sacola">Sua Sacola</h3>
+                    </div>
+                    <ul class="produtos-adicionados-sacola" id="produtos-adicionados">
+                      
+                    </ul>
+                    <div class="rodape-sacola">
+                        <div class="subtitulos-rodape">
+                            <h4 class="titulo-rodape">TOTAL</h4>
+                            <h4 class="titulo-rodape" id="titulo-rodape-sacola">R$ 159.88</h4>
+                        </div>
+                        <div class="fundo">
+                            <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
+                        </div>
+                        <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar <strong>FRETE
+                            GRÁTIS</strong></p>
+                        <div class="botoes-sacola">
+                            <button class="botao-continuar"><a class="link-botao-continua" href="#">continuar
+                                    comprando</a></button>
+                            <button class="botao-finalizar-compra">finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <div class="conteiner__pesquisar">
+        <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa" placeholder="O que você busca?">
+        <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
+            <li class="item-encontrado-campo-pesquisa">               
+                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
+                <div class="area-conteiner-campo-pesquisa">
+                    <a href="pages/cuidados.html" class="descricao-categoria-campo-pesquisa">Cuidados</a>
+                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
+                </div>
+            </li>
+            <li class="item-encontrado-campo-pesquisa">               
+                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
+                <div class="area-conteiner-campo-pesquisa">
+                    <a href="" class="descricao-categoria-campo-pesquisa">Cuidados</a>
+                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
     <main class="conteiner-produtos">
         <div class="conteiner-produtos-header">
             <ul class="header-produtos">
@@ -182,27 +231,6 @@
             </div>
         </div>
         <div class="produtos" id="lista-produtos">
-            <div class="produto">
-                <div class="apresentacao-produto">
-                    <span class="desconto">-25%</span>
-                    <img class="imagem-produto" src="https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-frente-800.jpeg?raw=true" alt="Shampoo uso Obrigatório">
-                    <div class="icone-coracao"></div>
-                </div>
-                <div class="produto-conteiner">
-                    <div class="sobre-produto">
-                        <h3 class="titulo-produto">Shampoo uso obrigatório 300ml</h3>
-                        <span class="avaliacao-produto"><div class="icone-avaliacao"></div><strong> (0)</strong></span>
-                        <p class="descricao-produto">Sunt tenetur cum, nihil soluta, voluptatibus possimus, unde eos porro adipisci quibusdam iure.</p>
-                    </div>
-                    <div class="preco-produto">
-                        <span class="preco-avista">R$ 139.69<strong>R$ 109.99</strong></span>
-                        <span class="preco-parcelado">6x<strong>R$ 61,74</strong>sem juros</span>
-                    </div>
-                </div>
-                <div class="area-button">
-                    <button class="button-produto"><div class="icone-cadeado"></div><span>COMPRAR</span></button>
-                </div>
-            </div>
         </div>
     </main>
     <section class="newlatter">
@@ -343,6 +371,8 @@
     <script src="../src/menu-dropdown.js"></script>
     <script src="../src/floating-button.js"></script>
     <script type="module" src="../src/pages/listando-produtos-promocoes.js"></script>
+    <script type="module" src="../src/sacola.js"></script>
+    <script type="module" src="../src/campoPesquisa.js"></script>
 </body>
 
 </html>

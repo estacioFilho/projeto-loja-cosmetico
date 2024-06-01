@@ -3,7 +3,7 @@
         {
             "id": 0,
             "imagens": ["https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-frente-800.jpeg?raw=true","https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-verso-800.jpeg?raw=true","https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/sp-uso-obrigatorio-aplicacao-800.jpeg?raw=true"],
-            "Categoria": "cuidados_diarios",
+            "Categoria": "cuidados",
             "nome": "Shampoo Uso Obrigatório 300ml",
             "Avaliacoes": 2,
             "preco": 139.99,
@@ -23,7 +23,7 @@
                 "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/co-uso-obrigatorio-plus-verso-800.jpeg?raw=true",
                 "https://github.com/estacioFilho/projeto-loja-cosmetico/blob/main/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg?raw=true"
             ],
-            "Categoria": "cuidados-diarios",
+            "Categoria": "cuidados",
             "nome": "Condicionador Uso Obrigatório Plus+ 300ml",
             "Avaliacoes": 3,
             "preco": 119.99,
