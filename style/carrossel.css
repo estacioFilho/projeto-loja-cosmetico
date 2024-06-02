@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     padding: 0 1em;
-    /* margin-left: 50px; */
 }
 .carrossel-img{
     justify-content: center;
-    width: 200px;
+    width: 120px;
 }
 .carrossel-itens{
     justify-content: center;
