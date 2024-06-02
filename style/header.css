@@ -37,7 +37,7 @@
 }
 .botao-flutuante{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     top: 70%;
     right: 10%;
     display: flex;

@@ -8,11 +8,15 @@
     font-family: var(--fonte-titulo);
 
 }
+.carrossel-cuidados__texto{
+    padding: 0;
+}
 .carrosel-recomendacoes{
     width: 100%;
 }
 .carrossel-recomendacoes-img{
-    width: 185px;
+    width: 120px;
+
     
     
 }

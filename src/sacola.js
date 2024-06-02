@@ -5,13 +5,16 @@ export default function visibilidadeSacola() {
     const checkCloseSacola = document.getElementById('checkbox-sacola')
     const iconeSacolaMobile = document.getElementById('sacola-mobile');
     checkCloseSacola.style.display = 'none';
+    const botaoFlutuante = document.getElementById('botao-flutuante')
 
 
     iconeSacolaMobile.addEventListener('click', () => {
         sacola.style.display = 'block'
+        botaoFlutuante.style.display = 'none';
     })
     iconeSacola.addEventListener('click', () => {
         sacola.style.display = 'block'
+        botaoFlutuante.style.display = 'none';
     })
 
     checkCloseSacola.addEventListener('change', () => {
