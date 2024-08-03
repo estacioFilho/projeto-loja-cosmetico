@@ -7,6 +7,7 @@
     <title>Página inicial</title>
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="assets/icone-DRUSS.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -23,32 +24,64 @@
         </div>
 
         <div class="cabecalho__principal">
-
             <div class="cabecalho__principal-1024">
                 <a class="link-logo" href="/index.html" style="cursor: pointer;"><img
-                        class="cabecalho__principal-1024-logo" src="/assets/logo-truss.png" alt="logo da truss"></a>
+                        class="cabecalho__principal-1024-logo" src="/assets/logoDruss.png" alt="logo da truss"></a>
+                <div class="conteiner__pesquisar">
+                    <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa"
+                        placeholder="O que você busca?">
+                    <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados"></ul>
+                </div>
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/plus.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li><img src="/assets/usuario.png" class="cabecalho__principal-1024-icon" alt="icone""></li>
-                    <li ><img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li class="area-sacola"><a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></a><p class="notificacoes-sacola" id="notificacoes-sacola">8</p></li>
+                    <li>
+                        <button class="botao-icone-usuario" id="botao-icone-usuario">
+                            <img src="/assets/usuario.png" class="cabecalho__principal-1024-icon"
+                                alt="icone de um usuário.">
+                    </li>
+                    </button>
+                    <li>
+                        <a href="" id="favoritos" class="group-text-icone" style="cursor: pointer;">
+                            <img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone">
+                            <p class="notificacoes" id="notificacoes-favoritos"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png"
+                                class="cabecalho__principal-1024-icon" alt="icone"></a>
+                        <p class="notificacoes-sacola" id="notificacoes-sacola"></p>
+                    </li>
                 </ul>
             </div>
             <ul class="cabecalho__principal__lista">
                 <li class="cabecalho__principal__lista-item">
-                    <input class="cabecalho__principal__lista-checkbox" id="checkbox" type="checkbox">
-                    <label for="checkbox" class="label"></label>
-                    <div class="cabecalho__principal__sub-lista__conteiner conteiner-menu">
+                    <div>
+                        <label for="checkbox-menu" class="menu-hamburg">
+                            <input class="cabecalho__principal__lista-checkbox" id="checkbox-menu" type="checkbox">
+                        </label>
+                    </div>
+                    <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
+                        <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
+                            <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
+                            <div class="icone-fechar-menu"></div>
+                        </label>
                         <ul class="cabecalho__principal__lista__sub-lista">
                             <li class="cabecalho__principal__lista__sub-lista__top">
-                                <span class="cabecalho__principal__lista__sub-lista__item_usuario">
+                                <button class="cabecalho__principal__lista__sub-lista__item_usuario"
+                                    id="form-botao-login">
                                     <img class="icone-20" src="/assets/usuario.png" alt="icnone_usuario">
                                     <p>Minha conta</p>
-                                </span>
+                                </button>
                                 <span class="cabecalho__principal__lista__sub-lista__item_usuario">
-                                    <img class="icone-20" src="/assets/coracao.png" alt="icnone_coracao">
-                                    <p>Favoritos</p>
+                                    <a href="#" id="favoritos-mobile" class="group-text-icone" style="cursor: pointer;">
+                                        <p>Favoritos</p>
+                                        <div class="group-favoritos-mobile">
+                                            <img src=" /assets/coracao.png"
+                                                class="cabecalho__principal-1024-icon icone-20" alt="icone">
+                                            <p class="notificacoes" id="notificacoes-favoritos-mobile"></p>
+                                        </div>
+                                    </a>
                                 </span>
                             </li>
                             <li class="dropdown-menu-eq">
@@ -73,7 +106,7 @@
                                 </label>
                                 <div class="dropdown-eq">
                                     <ul class="dropdown__conteiner-eq">
-                                        <li><a href="/pages/cuidados.html">Ver tudo</a></li>
+                                        <li>V<a href="/pages/cuidados.html">Ver tudo</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -141,24 +174,18 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cabecalho__principal__sub-lista__conteiner-fundo conteiner-menu">
-                    </div>
+
                 </li>
                 <li>
-                    <img class="cabecalho__principal__lista_logo" src="assets/logo-truss.png" alt="logo-truss">
+                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logoDruss.png"
+                            alt="logo-truss"></a>
                 </li>
                 <li>
                     <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem"
                             src="/assets/sacola.png" alt="icone_sacola"></a>
-                            <p class="notificacoes-sacola" id="notificacoes-sacola-mobile">8</p>
+                    <p class="notificacoes-sacola" id="notificacoes-sacola-mobile"></p>
                 </li>
             </ul>
-            <div class="conteiner__pesquisar" id="conteiner-pesquisa">
-                <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa"
-                    placeholder="O que você busca?">
-                <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
-                </ul>
-            </div>
             <div class="cabecalho__principal-1024-categorias">
                 <ul class="cabecalho__principal-1024-categorias-lista">
                     <li><a href="/pages/promocoes.html"
@@ -174,7 +201,7 @@
                     </li>
                 </ul>
             </div>
-           
+
             <div class="filtro-back" id="filtro-back">
                 <div class="sacola_compras" id="sacola_compras">
                     <div class="cabecalho-sacola">
@@ -190,7 +217,7 @@
                     <div class="rodape-sacola">
                         <div class="subtitulos-rodape">
                             <h4 class="titulo-rodape">TOTAL</h4>
-                            <h4 class="titulo-rodape" id="titulo-rodape-sacola">R$ 159.88</h4>
+                            <h4 class="titulo-rodape" id="titulo-rodape-sacola">R$ 00,00</h4>
                         </div>
                         <div class="fundo">
                             <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
@@ -198,13 +225,91 @@
                         <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong
                                 class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar
                             <strong>FRETE
-                                GRÁTIS</strong></p>
+                                GRÁTIS</strong>
+                        </p>
                         <div class="botoes-sacola">
                             <button class="botao-continuar"><a class="link-botao-continua" href="#">continuar
                                     comprando</a></button>
                             <button class="botao-finalizar-compra">finalizar compra</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="filtro-back-favoritos" id="filtro-back-favoritos">
+                <div class="area-favoritos" id="favoritos">
+                    <div class="cabecalho-favoritos">
+                        <label class="group-favoritos" for="checkbox-favoritos">
+                            <input type="checkbox" class="checkbox-favoritos" id="checkbox-favoritos">
+                            <div class="icone-fechar-favoritos"></div>
+                        </label>
+                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
+                    </div>
+                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos">
+
+                    </ul>
+                    <div class="rodape-favorito">
+                        <div class="botoes-favoritos">
+                            <p>Temos um cupom pra você: <span class="cupom-favoritos"></span></p>
+                            <button class="botao-adicionar-todos" id="botao-adicionar-todos">Adcionar
+                                <strong>todos</strong> a sacola!<div class="icone-sacola">
+                                </div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filtro-back-form" id="filtro-back-form">
+                <div class="conteiner-fundo-form">
+                    <img src="/assets/fundo-desck.png" class="imagem-fundo-desck" alt="Um fundo com a logo da Druss.">
+                    <img src="/assets/fundo-mobile-.png" class="imagem-fundo-mobile"
+                        alt="Um fundo com a logo da Druss.">
+                    <div class="area-form">
+                        <form class="form" id="formulaio">
+                            <div class="form-header">
+                                <h2>Login</h2>
+                                <label class="form-label-fechar" for="checkbox-form-fechar">
+                                    <input type="checkbox" class="checkbox-form-fechar" id="checkbox-form-fechar">
+                                    <div class="form-icone-fechar"></div>
+                                </label>
+                            </div>
+                            <div class="form-conteiner">
+                                <div class="form-input">
+                                    <label class="form-rotulo" for="form-input-email">
+                                        <span>E-mail</span>
+                                        <input type="email" class="form-input-box" id="form-input-email"
+                                            placeholder="E-mail">
+                                    </label>
+                                    <p></p>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-rotulo" for="form-input-email">
+                                        <span>Senha</span>
+                                        <div class="password">
+                                            <input type="email" class="form-input-box" id="form-input-email"
+                                                placeholder="Senha">
+                                            <button class="show-password"></button>
+                                        </div>
+                                    </label>
+                                    <p></p>
+                                </div>
+                                <div class="area-submit">
+                                    <button class="botao-recuperar-senha">Esqueceu a senha?</button>
+                                    <button class="botao-submit" id="botao-submit" type="submit">Entrar</button>
+                                </div>
+                                <div class="outras-maneiras-entrar">
+                                    <div class="conteiner-cadastrar">Ainda não tem uma conta? <button
+                                            class="botao-cadastrar" id="botao-cadastrar">Cadastre-se aqui.</button>
+                                    </div>
+                                    <p>ou</p>
+                                    <p>Entre com a sua conta do Google.</p>
+                                    <button class="botao-entrar-google">
+                                        <div class="icone-google"></div>
+                                        <p style="margin: 0;"> entrar com Google</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -285,12 +390,12 @@
             </div>
         </div>
     </section>
-    <section class="area-produtos" >
+    <section class="area-produtos">
         <h2 class="titulo-ofertas">
             Ofertas relampago!!!
         </h2>
         <p class="descricao-listagem">Acabaram de sair dor forno!</p>
-        <div class="area-listagem-produtos" id="area-produtos" >
+        <div class="area-listagem-produtos" id="area-produtos">
 
         </div>
 
@@ -426,7 +531,7 @@
             </ul>
         </div>
         <div class="rodap__menu-1024">
-            <ul class="rodape__menu-lista-1024-area">
+            <ul class="rodape__menu-lista-1024">
                 <li class="rodape__menu-lista__sobre-1024">
                     <h3>Sobre</h3>
                     <ul class="rodape__menu-lista__sobre-lista-1024">
@@ -462,7 +567,7 @@
         <div class="rodape-conteiner">
             <p class="rodape-conteiner__texto">© Programa desenvolve - Estacio Vieira. Todos os direitos reservados
                 ipsum dolor sit amet consectetur adipisicing elit. Laborum ut exercitationem veniam rerum.</p>
-            <img class="rodape-conteiner__logo" src="/assets/logo-truss.png" alt="logo rodapé">
+            <img class="rodape-conteiner__logo" src="/assets/logoDruss.png" alt="logo rodapé">
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -471,11 +576,11 @@
         console.log(larguraTela);
 
         function verificaLargura(largura) {
-            if (largura < 500) {
+            if (largura < 429) {
                 return 2;
-            } else if (largura > 501 && largura <= 1000) {
-                return 2
-            } else if (largura >= 1024 && largura < 1700) {
+            } else if (largura > 429 && largura <= 1000) {
+                return 3
+            } else if (largura >= 1024 && largura < 1250) {
                 return 3;
             } else {
                 return 4;
@@ -504,9 +609,12 @@
         crossorigin="anonymous"></script>
     <script src="src/menu-dropdown.js"></script>
     <script src="src/floating-button.js"></script>
+    <script type="module" src="src/menu-hamburg.js"></script>
     <script type="module" src="src/sacola.js"></script>
+    <script type="module" src="src/favoritos.js"></script>
     <script type="module" src="src/campoPesquisa.js"></script>
     <script type="module" src="src/pages/listando-produtos-home.js"></script>
+    <script type="module" src="src/formulaio.js"></script>
 </body>
 
 </html>

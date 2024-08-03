@@ -39,11 +39,14 @@
         width: 700px;
     }
     .corrossel-recomendacoes__titulo{
-       padding-left: 1.3em;
+       padding-left: 20px;
+    }
+    .carrossel-cuidados__texto{
+        padding-left: 20px;
     }
     .card-profissional-img{
-        width: 70%;
-        margin: auto 15%;
+        width: 100%;
+
     }
 }
 @media (min-width:1249px)  {

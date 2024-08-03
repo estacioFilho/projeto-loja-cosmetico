@@ -1,4 +1,3 @@
-
 .cabecalho__promocao {
     display: flex;
     width: 100%;
@@ -10,65 +9,71 @@
     align-items: center;
     justify-content: center;
 }
-.conteiner__pesquisar-campo{
+
+.conteiner__pesquisar-campo {
     border: none;
     background-color: var(--cor-cinza-claro);
     border-radius: 20px;
     padding: 0.5em;
     width: 100%;
 }
-.conteiner__pesquisar-campo::placeholder{
+
+.conteiner__pesquisar-campo::placeholder {
     background-image: url(/assets/lupa.svg);
     background-repeat: no-repeat;
     background-position: 100%;
 }
-.conteiner__pesquisar{
-    border-top: 1px solid var(--cor-cinza-claro);
-    width: 100%;
+
+.conteiner__pesquisar {
+    width: 50%;
     padding: 1em;
 }
 
 /* ------ BOTÃO FLUTUANTE ------ */
-.carrossel{
+.carrossel {
     position: relative;
 }
-.cabecalho__principal{
+
+.cabecalho__principal {
     position: relative;
 }
-.botao-flutuante{
+
+.botao-flutuante {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 70%;
     right: 10%;
     display: flex;
     align-items: center;
     gap: 0.5em;
 }
-.botao-flutuante-msg{
-  
- display: none;
- background-color: var(--cor-cinza-claro);
- width: 250px;
- padding: 0.5em;
- border-radius: 10px;
- box-shadow: 5px 5px 5px #aeaeaebb;
+
+.botao-flutuante-msg {
+
+    display: none;
+    background-color: var(--cor-cinza-claro);
+    width: 250px;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aeaeaebb;
 }
-.botao-flutuante-link{
+
+.botao-flutuante-link {
     text-decoration: none;
     display: flex;
 }
-.botao-flutuante-img{
-    position: absolute;
+
+.botao-flutuante-img {
     border-radius: 50%;
-    box-shadow: 5px 5px 5px #aeaeaebb;
     position: relative;
     z-index: 4;
-   background-image: url(/assets/whatsapp-preto.svg);
-   background-repeat: no-repeat;
-   width: 51px;
-   height: 50px;
+    background-image: url(/assets/whatsapp-preto.svg);
+    background-repeat: no-repeat;
+    width: 51px;
+    height: 50px;
 }
-.botao-flutuante-notificacao{
+
+.botao-flutuante-notificacao {
     position: absolute;
     z-index: 5;
     border-radius: 50%;
@@ -79,6 +84,43 @@
     font-weight: 700;
     color: white;
 }
+/*Campo pesquisa*/
+.conteiner__pesquisar{
+    position: relative;
+}
+.lista-produtos-pesquisados{
+    width: 95%;
+    height: 45vh;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: var(--cor-branco);
+    padding: 0;
+    box-shadow: -1px 5px 20px var(--cor-titulo-preto);
+    position: absolute;
+    z-index: 4;
+    border-radius: 5px;
+}
+.item-encontrado-campo-pesquisa{
+    display: flex;
+    padding: 0.5em 0;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+}
+.imagem-pesquisada{
+    width: 20%;
+}
+.descricao-categoria-campo-pesquisa{
+    text-decoration: none;
+    color: var(--cor-titulo-preto);
+    font-size: 12px;
+    margin: 0;
+}
+.titulo-produto-campo-pesquisa{
+    font-size: 16px;
+    margin: 0
+}
+
 .cabecalho__promocao__icone-promocao {
     background-image: url(../assets/tickets-icon.svg);
     background-repeat: no-repeat;
@@ -86,13 +128,16 @@
     width: 20px;
     margin-right: 5px;
 }
-.botao-flutuante:hover .botao-flutuante-img{
+
+.botao-flutuante:hover .botao-flutuante-img {
     margin-left: 0;
 }
-.botao-flutuante:hover .botao-flutuante-msg{
+
+.botao-flutuante:hover .botao-flutuante-msg {
     display: block;
     left: 25%;
 }
+
 .cabecalho__promocao__texto-promocao {
     font-weight: 700;
     margin: 0;
@@ -113,36 +158,44 @@
 .cabecalho__principal__lista {
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: space-between;
     padding: 0 1em;
 }
-.dropdown-menu-eq{
+
+.dropdown-menu-eq {
     margin-bottom: 1em;
     border: none;
 }
-.dropdown-eq{
+
+.dropdown-eq {
     display: none;
 }
-.dropdown__conteiner-eq{
+
+.dropdown__conteiner-eq {
     padding: 0.5em 0;
     margin-left: 1em;
 }
-.dropdown__conteiner-eq li a, .dropdown__conteiner-eq li{
+
+.dropdown__conteiner-eq li a,
+.dropdown__conteiner-eq li {
     text-decoration: none;
     color: var(--cor-cinza);
 }
-.arrow-left{
+
+.arrow-left {
     background-image: url('../assets/arrow_left.svg');
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
 }
-.cabecalho__principal__lista__sub-lista__item{
+
+.cabecalho__principal__lista__sub-lista__item {
     font-size: 18px;
     font-weight: 700;
     color: var(--cor-titulo-preto);
 }
+
 .icone-20 {
     width: 20px;
 }
@@ -151,8 +204,11 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+    background-color: transparent;
+    border: none;
 }
-.cabecalho__principal__lista__sub-lista__item_usuario p{
+
+.cabecalho__principal__lista__sub-lista__item_usuario p {
     margin: 0;
 }
 
@@ -167,16 +223,17 @@
     margin-bottom: 1em;
 }
 
-.cabecalho__principal__lista-item{
-    position: relative;
+.cabecalho__principal__lista-item {
     display: flex;
 }
 
-.cabecalho__principal__lista__sub-lista{
+    .checkbox-menu-fechar{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+.cabecalho__principal__lista__sub-lista {
     padding: 0;
-    left: -56px;
-    top: -40px;
-    position: absolute;
     z-index: 4;
     width: 340px;
     height: 100vh;
@@ -192,7 +249,8 @@
     padding: 1em 2em;
     height: 1em;
 }
-.cabecalho__principal__lista__sub-lista__item p{
+
+.cabecalho__principal__lista__sub-lista__item p {
     margin: 0;
 }
 
@@ -237,15 +295,18 @@
     height: 30px;
 }
 
-.label {
-    position: absolute;
-    top: -15px;
+.menu-hamburg{
     background-image: url(../assets/menu.svg);
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
 }
-
+.icone-fechar-menu{
+    background-image: url('/assets/fechar.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
 .cabecalho__principal__lista-checkbox:checked~.label {
     background-image: url(../assets/fechar.svg);
 }
@@ -255,83 +316,83 @@
     position: relative;
     left: 320px;
 }
-.area-pesquisar-mobile{
-    width: 100%;
-}
+
 .cabecalho__principal__lista-checkbox {
     display: none;
 }
 
-.cabecalho__principal-1024, .cabecalho__principal-1024-categorias{
+.cabecalho__principal-1024,
+.cabecalho__principal-1024-categorias {
     display: none;
 }
 
-@media (min-width:800px){
-    .cabecalho__principal{
+@media (min-width:800px) {
+    .cabecalho__principal {
         position: relative;
     }
-    .conteiner__pesquisar{
-        border: none;
-        width: 40%;
-        position: absolute;
-        z-index: 3;
-        left: 30%;
 
-    }
-    .cabecalho{
+    .cabecalho {
         width: 100%;
         z-index: 2;
         position: fixed;
         top: 0;
         background-color: var(--cor-branco);
     }
+
     .cabecalho__promocao {
         font-size: 20px;
         width: 100%;
         align-items: center;
     }
-    .link-logo{
+
+    .link-logo {
         width: 33%;
     }
+
     .cabecalho__promocao__icone-promocao {
         height: 30px;
         width: 30px;
     }
 
-    .cabecalho__principal__lista{
+    .cabecalho__principal__lista {
         display: none;
     }
-  
+
     .cabecalho__principal-1024 {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-
+    .area-logo{
+        width: 25%;
+    }
     .cabecalho__principal-1024-logo {
-        width: 33%;
+        width: 35%;
     }
 
     .cabecalho__principal-1024-icones {
+        padding: 0;
         margin: 0;
         display: flex;
-        width: 33%;
+        width: 25%;
         justify-content: space-evenly;
-       
+
     }
 
     .cabecalho__principal-1024-icon {
         display: block;
-        width: 30px;
-         text-decoration: none;
+        width: 25px;
+        text-decoration: none;
     }
-    .cabecalho__principal-1024-categorias{
+
+    .cabecalho__principal-1024-categorias {
         display: block;
         width: 100%;
         border: 1px solid var(--cor-cinza-claro);
     }
-    .cabecalho__principal-1024-categorias-lista{
+
+    .cabecalho__principal-1024-categorias-lista {
         margin: 0;
         display: flex;
         padding: 1em;
@@ -339,10 +400,11 @@
         justify-content: center;
         align-items: center;
     }
-    .cabecalho__principal-1024-categorias-lista-itens{
+
+    .cabecalho__principal-1024-categorias-lista-itens {
         font-size: 13px;
         font-family: var(--fonte-titulo);
         text-decoration: none;
         color: var(--cor-titulo-preto);
     }
-}   
+}

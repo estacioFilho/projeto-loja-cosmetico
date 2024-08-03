@@ -105,6 +105,13 @@
 .imagem-produto{
     width: 100%;
 }
+.button-favorito{
+    width: 0px;
+    height: 0px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    
+}
 .icone-coracao{
     position: absolute;
     left: 85%;
@@ -167,6 +174,13 @@
     border-radius: 25px;
     color: var(--cor-branco);
 }
+.icone-cadeado{
+    transition: 0.5s;
+    background-image: url(/assets/sacola-branco.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
 
 @media (min-width: 800px) and (max-width:1200px){
     body{
@@ -221,7 +235,7 @@
     }
     .button-produto:hover .icone-cadeado{
         transition: 0.5s;
-        background-image: url(/assets/lock_open.svg);
+        background-image: url(/assets/sacola-black.svg);
         background-repeat: no-repeat;
         width: 24px;
         height: 24px;
@@ -283,18 +297,19 @@
         justify-content: center;
         gap: 1em;
         padding: 1em 0;
+        
     }
     .button-produto:hover{
         transition: 0.5s;
         background-color: var(--cor-branco);
         border: 1px solid var(--cor-titulo-preto);
         color: var(--cor-titulo-preto);
-    }
-    .button-produto:hover .icone-cadeado{
-        transition: 0.5s;
-        background-image: url(/assets/lock_open.svg);
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
+        .icone-cadeado{
+            transition: 0.5s;
+            background-image: url(/assets/sacola-black.svg);
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+        }
     }
 } 
