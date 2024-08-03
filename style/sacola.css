@@ -17,10 +17,13 @@
     background-color: var(--cor-branco);
 }
 .icone-lixeira-sacola{
+    background-color: var(--cor-branco);
     background-image: url(/assets/lixeira.svg);
+    border: none;
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 .icone-fechar-sacola{
     margin-left: 1em;
@@ -51,7 +54,7 @@
 .produtos-adicionados-sacola{
     margin: 0;
     padding: 0;
-    height: 300px;
+    height: 450px;
 }
 .rodape-sacola{
     text-align: center;
@@ -109,7 +112,8 @@
     align-items: center;
     width: 100%;
     padding: 0.5em 0;
-    background-color: var(--cor-cinza-claro); 
+    background-color: var(--cor-branco); 
+    border-bottom: 1px solid var(--cor-cinza-claro);
 }
 .titulo-produto-sacola{
     display: flex;
@@ -142,6 +146,7 @@
     display: flex;
     position: relative;
 }
+
 .notificacoes-sacola{
         font-size: 10px;
         font-weight: 700;
@@ -152,23 +157,26 @@
         position: absolute;
         padding: 0 4.5px;
         border-radius: 10px;
-        top: 7%;
-        right: 3%;
+        top: 15%; 
+        
 }
-@media (min-width: 800px){
-    .notificacoes-sacola{
-        font-size: 10px;
-        font-weight: 700;
-        color: var(--cor-branco);
-        text-align: center;
-        text-decoration: none;
-        position: absolute;
-        top: -10%;
-        right: 3%;
-        padding: 0 4.5px;
-        border-radius: 10px;
-        background-color: red;
-    
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
-
-}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .produto-adicionando-sacola {
+    opacity: 0;
+  }
+  
+  .produto-adicionando-sacola.slide-in {
+    animation: slideIn 0.5s ease-out;
+    opacity: 1;
+  }
+  

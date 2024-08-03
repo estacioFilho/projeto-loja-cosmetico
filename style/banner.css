@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.carousel-indicators{
+    z-index: 1 !important;
+}
 .conteiner__banner-slide-mobile{
     z-index: 1;
     overflow: auto

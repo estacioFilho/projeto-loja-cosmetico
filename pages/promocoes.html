@@ -7,6 +7,7 @@
     <title>Página inicial</title>
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="../assets/icone-DRUSS.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -20,27 +21,45 @@
             <p class="cabecalho__promocao__texto-promocao">Quer <span class="cabecalho__promocao_destaque">10% de
                     desconto</span> na sua primeira compra? <span class="cabecalho__promocao_destaque">CUPOM
                     NEW10OFF</span>.</p>
-                </div>
-                
+        </div>
+
         <div class="cabecalho__principal">
             <div class="cabecalho__principal-1024">
-                <a href="/index.html" style="cursor: pointer;"><img class="cabecalho__principal-1024-logo" src="/assets/logo-truss.png"
-                    alt="logo da truss"></a>
-                <input class="cabecalho__principal-1024-pesquisar" placeholder="O que você busca?" type="search">
+                <a href="/index.html" style="cursor: pointer;"><img class="cabecalho__principal-1024-logo"
+                        src="/assets/logoDruss.png" alt="logo da truss"></a>
+                <div class="conteiner__pesquisar">
+                    <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa"
+                        placeholder="O que você busca?">
+                    <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
+                    </ul>
+                </div>
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/plus.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
                     <li><img src="/assets/usuario.png" class="cabecalho__principal-1024-icon" alt="icone""></li>
-                    <li ><img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
-                    <li><a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone"></a></li>
+                    <li >
+                        <a href=" #" id="favoritos" class="group-text-icone" style="cursor: pointer;">
+                            <img src=" /assets/coracao.png" class="cabecalho__principal-1024-icon" alt="icone">
+                            <p class="notificacoes" id="notificacoes-favoritos"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png"
+                                class="cabecalho__principal-1024-icon" alt="icone"></a>
+                        <p class="notificacoes-sacola" id="notificacoes-sacola"></p>
+                    </li>
                 </ul>
             </div>
             <div class="cabecalho__principal-1024-categorias">
                 <ul class="cabecalho__principal-1024-categorias-lista">
-                    <li><a href="promocoes.html" class="cabecalho__principal-1024-categorias-lista-itens">PROMOÇÕES</a></li>
-                    <li><a href="cuidados.html" class="cabecalho__principal-1024-categorias-lista-itens">CUIDADOS DIÁRIOS</a></li>
-                    <li><a href="tratamentos.html" class="cabecalho__principal-1024-categorias-lista-itens">TRATAMENTO</a></li>
-                    <li><a href="finalizadores.html" class="cabecalho__principal-1024-categorias-lista-itens">FINALIZADORES</a></li>
+                    <li><a href="promocoes.html" class="cabecalho__principal-1024-categorias-lista-itens">PROMOÇÕES</a>
+                    </li>
+                    <li><a href="cuidados.html" class="cabecalho__principal-1024-categorias-lista-itens">CUIDADOS
+                            DIÁRIOS</a></li>
+                    <li><a href="tratamentos.html"
+                            class="cabecalho__principal-1024-categorias-lista-itens">TRATAMENTO</a></li>
+                    <li><a href="finalizadores.html"
+                            class="cabecalho__principal-1024-categorias-lista-itens">FINALIZADORES</a></li>
                     <li><a href="#" class="cabecalho__principal-1024-categorias-lista-itens">LINHAS</a></li>
                     <li><a href="kits.html" class="cabecalho__principal-1024-categorias-lista-itens">KITS</a></li>
                 </ul>
@@ -52,11 +71,19 @@
                     <p id="botao-flutuante-notificacao" class="botao-flutuante-notificacao"></p>
                 </a>
             </div>
+         
             <ul class="cabecalho__principal__lista">
                 <li class="cabecalho__principal__lista-item">
-                    <input class="cabecalho__principal__lista-checkbox" id="checkbox" type="checkbox">
-                    <label for="checkbox" class="label"></label>
-                    <div class="cabecalho__principal__sub-lista__conteiner conteiner-menu">
+                    <div>
+                        <label for="checkbox-menu" class="menu-hamburg">
+                            <input class="cabecalho__principal__lista-checkbox" id="checkbox-menu" type="checkbox">
+                        </label>
+                    </div>
+                    <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
+                        <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
+                            <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
+                            <div class="icone-fechar-menu"></div>
+                        </label>
                         <ul class="cabecalho__principal__lista__sub-lista">
                             <li class="cabecalho__principal__lista__sub-lista__top">
                                 <span class="cabecalho__principal__lista__sub-lista__item_usuario">
@@ -64,12 +91,19 @@
                                     <p>Minha conta</p>
                                 </span>
                                 <span class="cabecalho__principal__lista__sub-lista__item_usuario">
-                                    <img class="icone-20" src="/assets/coracao.png" alt="icnone_coracao">
-                                    <p>Favoritos</p>
+                                    <a href="#" id="favoritos-mobile" class="group-text-icone" style="cursor: pointer;">
+                                        <p>Favoritos</p>
+                                        <div class="group-favoritos-mobile">
+                                            <img src=" /assets/coracao.png"
+                                                class="cabecalho__principal-1024-icon icone-20" alt="icone">
+                                            <p class="notificacoes" id="notificacoes-favoritos-mobile"></p>
+                                        </div>
+                                    </a>
                                 </span>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox01-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox01-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox01-submenu">
                                     PROMOÇÕES
                                     <div class="arrow-left"></div>
@@ -81,19 +115,21 @@
                                 </div>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox02-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox02-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox02-submenu">
                                     CUIDADOS DIÁRIOS
                                     <div class="arrow-left"></div>
                                 </label>
                                 <div class="dropdown-eq">
                                     <ul class="dropdown__conteiner-eq">
-                                        <li><a href="cuidados.html">Ver tudo</a></li>
+                                        <li>V<a href="cuidados.html">Ver tudo</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox03-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox03-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox03-submenu">
                                     TRAMENTOS
                                     <div class="arrow-left"></div>
@@ -105,7 +141,8 @@
                                 </div>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox04-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox04-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox04-submenu">
                                     FINALIZADORES
                                     <div class="arrow-left"></div>
@@ -117,7 +154,8 @@
                                 </div>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox05-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox05-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox05-submenu">
                                     LINHAS
                                     <div class="arrow-left"></div>
@@ -129,7 +167,8 @@
                                 </div>
                             </li>
                             <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item" for="checkbox06-submenu">
+                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                    for="checkbox06-submenu">
                                     <input type="checkbox" class="checkbox checkbox-eq" id="checkbox06-submenu">
                                     KITS
                                     <div class="arrow-left"></div>
@@ -152,27 +191,29 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cabecalho__principal__sub-lista__conteiner-fundo conteiner-menu">
-                    </div>
+
                 </li>
                 <li>
-                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logo-truss.png" alt="logo-truss"></a>
+                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logoDruss.png"
+                            alt="logo-truss"></a>
                 </li>
                 <li>
-                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola"></a>
+                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem"
+                            src="/assets/sacola.png" alt="icone_sacola"></a>
+                    <p class="notificacoes-sacola" id="notificacoes-sacola-mobile"></p>
                 </li>
             </ul>
             <div class="filtro-back" id="filtro-back">
                 <div class="sacola_compras" id="sacola_compras">
                     <div class="cabecalho-sacola">
                         <label for="checkbox-sacola">
-                            <input type="checkbox" class="checkbox-sacola" id="checkbox-sacola" >
+                            <input type="checkbox" class="checkbox-sacola" id="checkbox-sacola">
                             <div class="icone-fechar-sacola"></div>
                         </label>
                         <h3 class="titulo-sacola">Sua Sacola</h3>
                     </div>
                     <ul class="produtos-adicionados-sacola" id="produtos-adicionados">
-                      
+
                     </ul>
                     <div class="rodape-sacola">
                         <div class="subtitulos-rodape">
@@ -182,8 +223,11 @@
                         <div class="fundo">
                             <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
                         </div>
-                        <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar <strong>FRETE
-                            GRÁTIS</strong></p>
+                        <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong
+                                class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar
+                            <strong>FRETE
+                                GRÁTIS</strong>
+                        </p>
                         <div class="botoes-sacola">
                             <button class="botao-continuar"><a class="link-botao-continua" href="#">continuar
                                     comprando</a></button>
@@ -192,42 +236,50 @@
                     </div>
                 </div>
             </div>
+            <div class="filtro-back-favoritos" id="filtro-back-favoritos">
+                <div class="area-favoritos" id="favoritos">
+                    <div class="cabecalho-favoritos">
+                        <label class="group-favoritos" for="checkbox-favoritos">
+                            <input type="checkbox" class="checkbox-favoritos" id="checkbox-favoritos">
+                            <div class="icone-fechar-favoritos"></div>
+                        </label>
+                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
+                    </div>
+                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos">
+
+                    </ul>
+                    <div class="rodape-favorito">
+                        <div class="botoes-favoritos">
+                            <p>Temos um cupom pra você: <span class="cupom-favoritos"></span></p>
+                            <button class="botao-adicionar-todos" id="botao-adicionar-todos">Adcionar <strong>todos</strong> a sacola!<div
+                                    class="icone-sacola">
+                                    </div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="conteiner__pesquisar">
-        <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa" placeholder="O que você busca?">
-        <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados">
-            <li class="item-encontrado-campo-pesquisa">               
-                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
-                <div class="area-conteiner-campo-pesquisa">
-                    <a href="pages/cuidados.html" class="descricao-categoria-campo-pesquisa">Cuidados</a>
-                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
-                </div>
-            </li>
-            <li class="item-encontrado-campo-pesquisa">               
-                    <img  class="imagem-pesquisada" src="/assets/co-uso-obrigatorio-plus-aplicacao-800.jpeg" alt="Shampoo Usoo obrigatório 300ml">
-                <div class="area-conteiner-campo-pesquisa">
-                    <a href="" class="descricao-categoria-campo-pesquisa">Cuidados</a>
-                    <h4 class="titulo-produto-campo-pesquisa">Shampoo Usoo obrigatório 300ml</h4>
-                </div>
-            </li>
-        </ul>
-    </div>
     <main class="conteiner-produtos">
         <div class="conteiner-produtos-header">
             <ul class="header-produtos">
-                <li class="header-produtos-item"><a class="header-produtos-item-link" href="../index.html">Home</a><div class="icon-arrow-rigth"></div></li>
-                <li class="header-produtos-item"><a class="header-produtos-item-link" id="pagina_destaque" href="/pages/promocoes.html"></a></li>
+                <li class="header-produtos-item"><a class="header-produtos-item-link" href="../index.html">Home</a>
+                    <div class="icon-arrow-rigth"></div>
+                </li>
+                <li class="header-produtos-item"><a class="header-produtos-item-link" id="pagina_destaque"
+                        href="/pages/promocoes.html"></a></li>
             </ul>
             <h1 class="title-page" id="titulo_pagina"></h1>
             <p class="descricao-page">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet.</p>
         </div>
         <div class="headingline-produtos">
             <div class="filter-produtos">
-                <h3>Filtrar</h3><div class="icone-filter"></div>
+                <h3>Filtrar</h3>
+                <div class="icone-filter"></div>
             </div>
             <div class="Relevancia-produtos">
-                <h3>Relevância</h3><div class="icone-arrow-down"></div>
+                <h3>Relevância</h3>
+                <div class="icone-arrow-down"></div>
             </div>
         </div>
         <div class="produtos" id="lista-produtos">
@@ -330,7 +382,7 @@
                     <h3>Sobre</h3>
                     <ul class="rodape__menu-lista__sobre-lista-1024">
                         <li class="rodape__menu-lista__atendimento-lista-tem">Fundação</li>
-                        <li class="rodape__menu-lista__atendimento-lista-tem">Misão</li>
+                        <li class="rodape__menu-lista__atendimento-lista-tem">Missão</li>
                         <li class="rodape__menu-lista__atendimento-lista-tem">Parceiros</li>
                     </ul>
                 </li>
@@ -361,7 +413,7 @@
         <div class="rodape-conteiner">
             <p class="rodape-conteiner__texto">© Programa desenvolve - Estacio Vieira. Todos os direitos reservados
                 ipsum dolor sit amet consectetur adipisicing elit. Laborum ut exercitationem veniam rerum.</p>
-            <img class="rodape-conteiner__logo" src="/assets/logo-truss.png" alt="logo rodapé">
+            <img class="rodape-conteiner__logo" src="../assets/logoDruss.png" alt="logo rodapé">
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -371,9 +423,10 @@
     <script src="../src/menu-dropdown.js"></script>
     <script src="../src/floating-button.js"></script>
     <script type="module" src="../src/pages/listando-produtos-promocoes.js"></script>
+    <script type="module" src="../src/menu-hamburg.js"></script>
     <script type="module" src="../src/sacola.js"></script>
+    <script type="module" src="../src/favoritos.js"></script>
     <script type="module" src="../src/campoPesquisa.js"></script>
 </body>
 
 </html>
-

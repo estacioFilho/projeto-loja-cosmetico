@@ -74,6 +74,10 @@
 .rodap__menu-1024{
     display: none;
 }
+.rodape__menu-lista-1024{
+    display: flex;
+    justify-content: space-evenly;
+}
 @media (min-width:1024px) {
     .rodap__menu{
         display: none;
@@ -81,10 +85,6 @@
     .rodap__menu-1024{
         padding-top:2em ;
         display: block;
-    }
-    .rodape__menu-lista-1024-area{
-        display: flex;
-        justify-content: space-evenly;
     }
     .rodape__menu-lista__sobre-lista{
         padding: 0;

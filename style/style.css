@@ -2,14 +2,15 @@
 @import url(/style/header.css);
 @import url(/style/banner.css);
 @import url(/style/carrossel.css);
-@import url(/style/produto.css);
 @import url(/style/cuidados.css);
 @import url(/style/recomendacoes-card-profissionais.css);
 @import url(/style/newlatter.css);
 @import url(/style/rodape.css);
 @import url(/pages/style-pages/style-produtos.css);
 @import url(/style/sacola.css);
-@import url(/style/campoPesquisa.css);
+@import url(/style/favoritos.css);
+@import url(/style/formulario.css);
+
 :root{
     --fonte-titulo:'Franklin Gothic Medium',Arial, sans-serif;
     --fonte-paragrafo: "Montserrat", sans-serif;
@@ -30,4 +31,18 @@ body{
     font-family: var(--fonte-paragrafo);
     font-size: 14px;
     font-weight: 400;
+    *::-webkit-scrollbar {
+        width: 12px;
+      }
+      
+      *::-webkit-scrollbar-track {
+        border-radius: 0 5px 5px 0;
+        background: var(--cor-cinza-claro);
+      }
+      
+      *::-webkit-scrollbar-thumb {
+        background-color: var(--cor-titulo-preto);
+        border-radius: 20px;
+        border: 3px solid var(--cor-cinza-claro)
+      }
 }
