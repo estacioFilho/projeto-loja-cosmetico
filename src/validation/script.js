@@ -1,4 +1,7 @@
+import { utilities } from "../utilities.js";
 const camposObrigatorios = document.querySelectorAll("[required]");
+const nome = document.getElementById('form-input-nome-cadastro')
+const email = document.getElementById('form-input-email-cadastro')
 const senha = document.getElementById('form-input-senha-cadastro');
 const confiSenha = document.getElementById('form-input-senha-cadastro-confirm');
 const senhaLogin = document.getElementById('form-input-senha')
@@ -9,6 +12,7 @@ const msgErroSenha = document.getElementById('mensagem-senha');
 const msgErroSenhaConf = document.getElementById('msgErroSenhaConf');
 const checkTermos = document.getElementById('checkbox-termos');
 const formLogin = document.getElementById('formulario-login');
+const formCadastro = document.getElementById('formulario-cadastro');
 const botaoCadastro = document.getElementById('botao-submit-cadastrar');
 const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 camposObrigatorios.forEach((campo) => campo.addEventListener('blur', () => verificaCampo(campo)));
@@ -87,13 +91,21 @@ visibCadastroConfi.addEventListener('click', () => toggleVisibility([senha, conf
 
 
 
-botaoCadastro.addEventListener('click', (event) => {
+formCadastro.addEventListener('submit', (event) => {
     event.preventDefault();
-    const mensagemErro = document.querySelector('#mensagem-erro')
-    if (!checkTermos.checked) {
-        mensagemErro.textContent = mensagens.termos.valueMissing
-    } else {
-        mensagemErro.textContent = "";
-    }
-})
+    
+    const user = {
+        name: nome.value,
+        email: email.value,
+        password: senha.value
+    };
+
+    utilities.cadastrarUsuario('register', user)
+        .then((response) => {
+            alert(response.message);
+        })
+        .catch((error) => {
+           console.error('Erro ao cadastrar usuário:', error);
+        });
+});
 
