@@ -25,7 +25,8 @@ iconeFavoritosMobile.addEventListener('click', () => {
     botaoFlutuante.style.display = 'none';
     sacola.style.display = 'none';
 })
-iconeFavoritos.addEventListener('click', () => {
+iconeFavoritos.addEventListener('click', (event) => {
+    event.preventDefault()
     favoritos.style.display = 'block'
     botaoFlutuante.style.display = 'none';
     sacola.style.display = 'none';

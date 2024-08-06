@@ -3,25 +3,37 @@ const fundo = document.getElementById('filtro-back-form');
 const checkbox = document.getElementById('checkbox-form-fechar');
 const botaoUsuarioMobile = document.getElementById('form-botao-login');
 const botaoFlutuante = document.getElementById('botao-flutuante')
+const titulo = document.getElementsByClassName('form-titulo')[0];
+const botaoCadastrar = document.getElementById('botao-cadastrar')
+const formularioLogin = document.getElementById('formulario-login');
+const formularioCadastro = document.getElementById('formulario-cadastro');
 
 fundo.style.display = 'none';
-checkbox.style.display = 'none'; 
+checkbox.style.display = 'none';
+
+const disponibilizarElementos = () => {
+    botaoFlutuante.style.display = 'none';
+    fundo.style.display = 'block';
+    fundo.style.display = 'flex';
+    fundo.style.justifyContent = 'center';
+    fundo.style.alignItems = 'center';
+    formularioCadastro.style.display = 'none';
+    formularioLogin.style.display = 'block';
+    titulo.textContent = 'Login';
+}
 
 botaoUsuario.addEventListener('click', () => {
-    botaoFlutuante.style.display = 'none';
-    fundo.style.display = 'block';
-    fundo.style.display = 'flex';
-    fundo.style.justifyContent = 'center';
-    fundo.style.alignItems = 'center';
+    disponibilizarElementos();
 });
 botaoUsuarioMobile.addEventListener('click', () => {
-    botaoFlutuante.style.display = 'none';
-    fundo.style.display = 'block';
-    fundo.style.display = 'flex';
-    fundo.style.justifyContent = 'center';
-    fundo.style.alignItems = 'center';
+    disponibilizarElementos();
 });
 
-checkbox.addEventListener('change', ()=>{
-    fundo.style.display = 'block'? fundo.style.display = 'none': "";
+botaoCadastrar.addEventListener('click', () => {
+    titulo.textContent = 'Cadastro';
+    formularioLogin.style.display = 'none';
+    formularioCadastro.style.display = 'block';
+})
+checkbox.addEventListener('change', () => {
+    fundo.style.display = 'block' ? fundo.style.display = 'none' : "";
 })

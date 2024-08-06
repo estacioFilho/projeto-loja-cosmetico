@@ -12,22 +12,16 @@
     top: 0;
     right: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-
+.imagem-fundo-desck{
+    display: none;
+}
 .conteiner-fundo-form {
-    width: 90%;
+    width: 80%;
 }
 
 .imagem-fundo-mobile {
     width: 100%;
-
-}
-
-.imagem-fundo-desck {
-    display: none;
 }
 
 .area-form {
@@ -37,27 +31,41 @@
     text-align: center;
 }
 
-.form {
+.form{
     padding: 1em;
     width: 100%;
 }
 
-.form-header {
+.form-header{
+    width: 100%;
+    margin: 0;
+    padding: 1em;
     display: flex;
+    align-items:center;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-header li{
+    display: flex;
+    justify-content: right;
+    width: 33%;
 }
 
-.form-header h2 {
+.form-titulo{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
     width: 55%;
-    text-align: right;
+    margin: 0;
 }
 
 .form-label-fechar {
+    width: 100%;
     cursor: pointer;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    align-items:center;
+    justify-content:right;
     width: 45%;
-
 }
 
 .form-icone-fechar {
@@ -88,6 +96,7 @@
 .password {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -99,10 +108,28 @@
     width: 18px;
     height: 18px;
     position: absolute;
+    top: 15%;
     right: 1%;
     z-index: 5;
 }
-
+.mensagem-erro{
+    background-color: var(--cor-branco);
+    z-index: 3;
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    line-height: 1em;
+}
+.mensagem-erro-senha{
+    margin: 0;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+}
+.termos__texto{
+    font-size: 14px;
+    margin-left: 1em;
+}
 .form-input-box::placeholder {
     padding: 0 0.5em;
 }
@@ -165,19 +192,21 @@
 
 @media (min-width:1024px) {
     .conteiner-fundo-form {
+        width: 60%;
         display: flex;
-        width: 90%;
         justify-content: center;
     }
 
     .area-form {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
         width: 45%;
     }
 
     .imagem-fundo-desck {
+        display: block;
         width: 45%;
     }
 
