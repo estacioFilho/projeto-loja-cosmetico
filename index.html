@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#0" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png"
+                        <a href="" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png"
                                 class="cabecalho__principal-1024-icon" alt="icone"></a>
                         <p class="notificacoes-sacola" id="notificacoes-sacola"></p>
                     </li>
@@ -259,44 +259,45 @@
             </div>
             <div class="filtro-back-form" id="filtro-back-form">
                 <div class="conteiner-fundo-form">
-                    <img src="/assets/fundo-desck.png" class="imagem-fundo-desck" alt="Um fundo com a logo da Druss.">
+                    <img src="/assets/fundo-desktop.png" class="imagem-fundo-desck" alt="Um fundo com a logo da Druss.">
                     <img src="/assets/fundo-mobile-.png" class="imagem-fundo-mobile"
                         alt="Um fundo com a logo da Druss.">
                     <div class="area-form">
-                        <form class="form" id="formulaio">
-                            <div class="form-header">
-                                <h2>Login</h2>
+                        <ul class="form-header">
+                            <li></li>
+                            <li style="justify-content: center;">
+                                <p class="form-titulo"></p>
+                            </li>
+                            <li>
                                 <label class="form-label-fechar" for="checkbox-form-fechar">
                                     <input type="checkbox" class="checkbox-form-fechar" id="checkbox-form-fechar">
                                     <div class="form-icone-fechar"></div>
                                 </label>
-                            </div>
+                            </li>
+                        </ul>
+                        <form class="form formulario-login" id="formulario-login" >
                             <div class="form-conteiner">
                                 <div class="form-input">
-                                    <label class="form-rotulo" for="form-input-email">
-                                        <span>E-mail</span>
-                                        <input type="email" class="form-input-box" id="form-input-email"
-                                            placeholder="E-mail">
-                                    </label>
-                                    <p></p>
+                                    <label class="form-rotulo" for="form-input-email">E-mail</label>
+                                    <input type="email" name="email" class="form-input-box" id="form-input-email"
+                                        placeholder="E-mail" required>
+                                    <p class="mensagem-erro"></p>
                                 </div>
                                 <div class="form-input">
-                                    <label class="form-rotulo" for="form-input-email">
-                                        <span>Senha</span>
-                                        <div class="password">
-                                            <input type="email" class="form-input-box" id="form-input-email"
-                                                placeholder="Senha">
-                                            <button class="show-password"></button>
-                                        </div>
-                                    </label>
-                                    <p></p>
+                                    <label class="form-rotulo" for="form-input-senha">Senha</label>
+                                    <div class="password" style="flex-direction: column;">
+                                        <input type="password" name="senha" class="form-input-box" id="form-input-senha"
+                                            placeholder="Senha" required>
+                                            <button class="show-password" id="show-password-login"></button>
+                                            <p class="mensagem-erro mensagem-erro-senha"></p>
+                                    </div>
                                 </div>
                                 <div class="area-submit">
                                     <button class="botao-recuperar-senha">Esqueceu a senha?</button>
                                     <button class="botao-submit" id="botao-submit" type="submit">Entrar</button>
                                 </div>
                                 <div class="outras-maneiras-entrar">
-                                    <div class="conteiner-cadastrar">Ainda não tem uma conta? <button
+                                    <div class="conteiner-cadastrar">Ainda não tem uma conta? <button type="button"
                                             class="botao-cadastrar" id="botao-cadastrar">Cadastre-se aqui.</button>
                                     </div>
                                     <p>ou</p>
@@ -305,6 +306,56 @@
                                         <div class="icone-google"></div>
                                         <p style="margin: 0;"> entrar com Google</p>
                                     </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form class="form formulario-cadastro" id="formulario-cadastro" >
+                            <div class="form-conteiner">
+                                <div class="form-input">
+                                    <label class="form-rotulo" for="form-input-nome-cadastro">Nome</label>
+                                    <input type="text" name="nome" class="form-input-box" id="form-input-nome-cadastro"
+                                        placeholder="Nome" required>
+                                    <p class="mensagem-erro"></p>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-rotulo" for="form-input-email-cadastro">E-mail</label>
+                                    <input type="email" name="email" class="form-input-box"
+                                        id="form-input-email-cadastro" placeholder="E-mail" required>
+                                    <p class="mensagem-erro"></p>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-rotulo" for="form-input-senha-cadastro" >Senha</label>
+                                    <div class="password">
+                                        <input type="password" name="senha" class="form-input-box"
+                                            id="form-input-senha-cadastro" placeholder="Senha" required>
+                                        <button class="show-password" id="show-password-cad" data-showPass
+                                        ></button>
+                                        <p class="mensagem-erro mensagem-erro-senha" id="mensagem-senha" ></p>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-rotulo"
+                                        for="form-input-senha-cadastro-confirm" >Confirmação</label>
+                                    <div class="password">
+                                        <input type="password" name="senha" class="form-input-box"
+                                            id="form-input-senha-cadastro-confirm" placeholder="Senha" required>
+                                        <button class="show-password" id="show-password-cad-confi" ></button>
+                                        <p class="mensagem-erro mensagem-erro-senha" id="msgErroSenhaConf"></p>
+                                    </div>
+                                </div>
+                                <div class="form-input" style="display: flex; align-items: flex-start; position: relative; margin-top: 1em;" >
+                                    <input type="checkbox" name="termos" class="termos__input" id="checkbox-termos" required>
+                                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos
+                                        meus dados conforme
+                                        descrito na Política
+                                        de
+                                        Privacidade do banco.</p>
+                                    <p class="mensagem-erro mensagem-erro-senha" id="mensagem-erro"></p>
+                                </div>
+                                <div class="area-submit">
+                                    <button class="botao-submit" id="botao-submit-cadastrar"
+                                        type="submit">Cadastrar</button>
                                 </div>
                             </div>
                         </form>
@@ -615,6 +666,7 @@
     <script type="module" src="src/campoPesquisa.js"></script>
     <script type="module" src="src/pages/listando-produtos-home.js"></script>
     <script type="module" src="src/formulaio.js"></script>
+    <script type="module" src="src/validation/script.js"></script>
 </body>
 
 </html>
