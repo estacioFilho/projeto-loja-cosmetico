@@ -39,6 +39,22 @@ function adicionarProduto(endpoint, dados) {
     }
     )
 }
+function cadastrarUsuario(endpoint, dados){
+    return fetch(`http://localhost:3001/api/auth/${endpoint}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dados)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    });
+}
+
 
 function deletarProduto(endpoint, id) {
     fetch(`http://localhost:3001/${endpoint}/${id}`,
@@ -87,5 +103,6 @@ export const utilities = {
     listaUmProdutos,
     adicionarProduto,
     deletarProduto,
-    deletarTodosProdutos
+    deletarTodosProdutos,
+    cadastrarUsuario
 };
