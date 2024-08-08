@@ -1,4 +1,4 @@
-.filtro-back{
+.filtro-back {
     background-color: rgba(0, 0, 0, 0.483);
     width: 100vw;
     height: 100vh;
@@ -7,7 +7,8 @@
     top: 0;
     right: 0;
 }
-.sacola_compras{
+
+.sacola_compras {
     position: fixed;
     right: 0%;
     top: 0%;
@@ -16,7 +17,13 @@
     height: 100vh;
     background-color: var(--cor-branco);
 }
-.icone-lixeira-sacola{
+
+.group-text-icone {
+    border: none;
+    background-color: transparent;
+}
+
+.icone-lixeira-sacola {
     background-color: var(--cor-branco);
     background-image: url(/assets/lixeira.svg);
     border: none;
@@ -25,52 +32,60 @@
     height: 24px;
     cursor: pointer;
 }
-.icone-fechar-sacola{
+
+.icone-fechar-sacola {
     margin-left: 1em;
     background-image: url(/assets/fechar-black.svg);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
 }
-.imagem-produto-sacola{
+
+.imagem-produto-sacola {
     width: 35%;
 }
-.progresso-frete-gratis{
+
+.progresso-frete-gratis {
     background-color: rgb(158, 0, 0);
     height: 10px;
     border-radius: 5px;
 }
-.cabecalho-sacola{
+
+.cabecalho-sacola {
     padding: 1em 0.5em;
     display: flex;
     align-items: center;
     border-bottom: 1.5px solid var(--cor-cinza-claro);
 }
 
-.titulo-sacola{
+.titulo-sacola {
     margin: 0;
     margin-left: 3em;
 }
-.produtos-adicionados-sacola{
+
+.produtos-adicionados-sacola {
+    border-bottom: 2px solid var(--cor-cinza-claro);
     margin: 0;
-    padding: 0;
+    padding: 0 0.5em 0 1em;
     height: 450px;
 }
-.rodape-sacola{
+
+.rodape-sacola {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    border-top: 1.5px solid var(--cor-cinza-claro);
     padding: 1em 0.5em;
 }
-.subtitulos-rodape{
+
+.subtitulos-rodape {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.fundo{
+
+.fundo {
     margin: auto 5%;
     display: flex;
     align-items: center;
@@ -81,22 +96,26 @@
     box-shadow: inset 0 0.5px 40px var(--cor-cinza-claro);
     border: 1px solid var(--cor-cinza-claro);
 }
-.botoes-sacola{
+
+.botoes-sacola {
     display: flex;
     gap: 1.5em;
 }
-.botao-continuar{
+
+.botao-continuar {
     border: none;
     background-color: var(--cor-cinza-claro);
     border-radius: 30px;
 }
-.link-botao-continua{
+
+.link-botao-continua {
     text-decoration: none;
     color: var(--cor-titulo);
     text-transform: uppercase;
     font-size: 15px;
 }
-.botao-finalizar-compra{
+
+.botao-finalizar-compra {
     border: none;
     border-radius: 30px;
     text-transform: uppercase;
@@ -104,79 +123,110 @@
     background-color: var(--cor-preto);
     color: var(--cor-branco);
 }
-.botao-finalizar-compra:hover{
+
+.botao-finalizar-compra:hover {
     background-color: var(--cor-titulo-preto);
 }
-.produto-adicionando-sacola{
+
+.produto-adicionando-sacola {
     display: flex;
     align-items: center;
+    gap: 1em;
     width: 100%;
     padding: 0.5em 0;
-    background-color: var(--cor-branco); 
+    background-color: var(--cor-branco);
     border-bottom: 1px solid var(--cor-cinza-claro);
 }
-.titulo-produto-sacola{
+
+.titulo-produto-sacola {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
 
 }
-.quatidade-valor-produto{
+/* 
+<div class="quantity-control">
+<button class="decrease" data-id="${produto.id}">-</button>
+<span class="quantity" data-quatity>${produto.quantity}</span>
+<button class="increase" data-id="${produto.id}">+</button>
+</div>
+*/
+.quantity-control{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 0.5em
 }
-.conteiner-produto-adicionanado{
+
+.decrease, .increase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--cor-branco);
+    border-radius: 50%;
+}
+.decrease:hover,
+.increase:hover{
+    background-color: var(--cor-titulo-preto);
+    color: var(--cor-branco);
+}
+.conteiner-produto-adicionanado {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
     width: 100%;
 }
-.quatidade-produto{
+
+.quatidade-produto {
     border-radius: 5px;
     width: 80px;
     height: 30px;
     text-align: center;
 }
-.nome-produto-sacola{
+
+.nome-produto-sacola {
     margin: 0;
     font-weight: 700;
 }
-.area-sacola{
+
+.area-sacola {
     display: flex;
     position: relative;
 }
 
-.notificacoes-sacola{
-        font-size: 10px;
-        font-weight: 700;
-        background-color: red;
-        color: var(--cor-branco);
-        text-align: center;
-        text-decoration: none;
-        position: absolute;
-        padding: 0 4.5px;
-        border-radius: 10px;
-        top: 15%; 
-        
+.notificacoes-sacola {
+    position: absolute;
+    bottom: 60%;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--cor-branco);
+    background-color: red;
+    width: 15px;
+
 }
+
 @keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  .produto-adicionando-sacola {
+}
+
+.produto-adicionando-sacola {
     opacity: 0;
-  }
-  
-  .produto-adicionando-sacola.slide-in {
+}
+
+.produto-adicionando-sacola.slide-in {
     animation: slideIn 0.5s ease-out;
     opacity: 1;
-  }
-  
+}

@@ -325,8 +325,13 @@
 .cabecalho__principal-1024-categorias {
     display: none;
 }
-
+.area-menu-mobile{
+    border: 1px solid var(--cor-cinza-claro);
+}
 @media (min-width:800px) {
+    .comteiner__pesquisa-mobile{
+        display: none;
+    }
     .cabecalho__principal {
         position: relative;
     }
