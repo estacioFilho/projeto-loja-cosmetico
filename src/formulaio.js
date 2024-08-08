@@ -1,9 +1,8 @@
 
 const botaoUsuario = document.getElementById('botao-icone-usuario');
 const fundo = document.getElementById('filtro-back-form');
-const checkbox = document.getElementById('checkbox-form-fechar');
+const checkbox = document.getElementById('checkbox-form-fechar')
 const botaoUsuarioMobile = document.getElementById('form-botao-login');
-const botaoFlutuante = document.getElementById('botao-flutuante')
 const titulo = document.getElementsByClassName('form-titulo')[0];
 const botaoCadastrar = document.getElementById('botao-cadastrar')
 const formularioLogin = document.getElementById('formulario-login');
@@ -13,7 +12,6 @@ fundo.style.display = 'none';
 checkbox.style.display = 'none';
 
 const disponibilizarElementos = () => {
-    botaoFlutuante.style.display = 'none';
     fundo.style.display = 'block';
     fundo.style.display = 'flex';
     fundo.style.justifyContent = 'center';

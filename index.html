@@ -28,9 +28,9 @@
                 <a class="link-logo" href="/index.html" style="cursor: pointer;"><img
                         class="cabecalho__principal-1024-logo" src="/assets/logoDruss.png" alt="logo da truss"></a>
                 <div class="conteiner__pesquisar">
-                    <input type="search" class="conteiner__pesquisar-campo" id="campo-pesquisa"
-                        placeholder="O que você busca?">
-                    <ul class="lista-produtos-pesquisados" id="lista-produtos-pesquisados"></ul>
+                    <input type="search" class="conteiner__pesquisar-campo" placeholder="O que você busca?"
+                        data-campo-pesquisa>
+                    <ul class="lista-produtos-pesquisados" data-resultado-pesquisa></ul>
                 </div>
                 <ul class="cabecalho__principal-1024-icones">
                     <li><img src="/assets/capelo.png" class="cabecalho__principal-1024-icon" alt="icone"></li>
@@ -48,144 +48,154 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" id="sacola" style="cursor: pointer;"><img src="/assets/sacola.png"
-                                class="cabecalho__principal-1024-icon" alt="icone"></a>
-                        <p class="notificacoes-sacola" id="notificacoes-sacola"></p>
+                        <a href="" id="sacola" class="group-text-icone">
+                            <img src="/assets/sacola.png" class="cabecalho__principal-1024-icon" alt="icone">
+                            <p class="notificacoes-sacola" id="notificacoes-sacola"></p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <ul class="cabecalho__principal__lista">
-                <li class="cabecalho__principal__lista-item">
-                    <div>
-                        <label for="checkbox-menu" class="menu-hamburg">
-                            <input class="cabecalho__principal__lista-checkbox" id="checkbox-menu" type="checkbox">
-                        </label>
-                    </div>
-                    <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
-                        <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
-                            <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
-                            <div class="icone-fechar-menu"></div>
-                        </label>
-                        <ul class="cabecalho__principal__lista__sub-lista">
-                            <li class="cabecalho__principal__lista__sub-lista__top">
-                                <button class="cabecalho__principal__lista__sub-lista__item_usuario"
-                                    id="form-botao-login">
-                                    <img class="icone-20" src="/assets/usuario.png" alt="icnone_usuario">
-                                    <p>Minha conta</p>
-                                </button>
-                                <span class="cabecalho__principal__lista__sub-lista__item_usuario">
-                                    <a href="#" id="favoritos-mobile" class="group-text-icone" style="cursor: pointer;">
-                                        <p>Favoritos</p>
-                                        <div class="group-favoritos-mobile">
-                                            <img src=" /assets/coracao.png"
-                                                class="cabecalho__principal-1024-icon icone-20" alt="icone">
-                                            <p class="notificacoes" id="notificacoes-favoritos-mobile"></p>
-                                        </div>
-                                    </a>
-                                </span>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox01-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox01-submenu">
-                                    PROMOÇÕES
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li><a href="/pages/promocoes.html">Ver tudo</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox02-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox02-submenu">
-                                    CUIDADOS DIÁRIOS
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li>V<a href="/pages/cuidados.html">Ver tudo</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox03-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox03-submenu">
-                                    TRAMENTOS
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li><a href="pages/tratamentos.html">Ver tudo</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox04-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox04-submenu">
-                                    FINALIZADORES
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li><a href="pages/finalizadores.html">Ver tudo</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox05-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox05-submenu">
-                                    LINHAS
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li>Ver tudo</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown-menu-eq">
-                                <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
-                                    for="checkbox06-submenu">
-                                    <input type="checkbox" class="checkbox checkbox-eq" id="checkbox06-submenu">
-                                    KITS
-                                    <div class="arrow-left"></div>
-                                </label>
-                                <div class="dropdown-eq">
-                                    <ul class="dropdown__conteiner-eq">
-                                        <li><a href="pages/kits.html">Ver tudo</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="cabecalho__principal__lista__sub-lista__bottom">
-                                <span class="cabecalho__principal__lista__sub-lista__item_usuario">
-                                    <img class="icone-20" src="/assets/plus.png" alt="icnone_usuario">
-                                    <p>TrussPro</p>
-                                </span>
-                                <span class="cabecalho__principal__lista__sub-lista__item_usuario">
-                                    <img class="icone-20" src="/assets/capelo.png" alt="icnone_coracao">
-                                    <p>Truss academy</p>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="area-menu-mobile">
+                <ul class="cabecalho__principal__lista">
+                    <li class="cabecalho__principal__lista-item">
+                        <div>
+                            <label for="checkbox-menu" class="menu-hamburg">
+                                <input class="cabecalho__principal__lista-checkbox" id="checkbox-menu" type="checkbox">
+                            </label>
+                        </div>
+                        <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
+                            <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
+                                <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
+                                <div class="icone-fechar-menu"></div>
+                            </label>
+                            <ul class="cabecalho__principal__lista__sub-lista">
+                                <li class="cabecalho__principal__lista__sub-lista__top">
+                                    <button class="cabecalho__principal__lista__sub-lista__item_usuario"
+                                        id="form-botao-login">
+                                        <img class="icone-20" src="/assets/usuario.png" alt="icnone_usuario">
+                                        <p>Minha conta</p>
+                                    </button>
+                                    <span class="cabecalho__principal__lista__sub-lista__item_usuario">
+                                        <a href="#" id="favoritos-mobile" class="group-text-icone"
+                                            style="cursor: pointer;">
+                                            <p>Favoritos</p>
+                                            <div class="group-favoritos-mobile">
+                                                <img src=" /assets/coracao.png"
+                                                    class="cabecalho__principal-1024-icon icone-20" alt="icone">
+                                                <p class="notificacoes" id="notificacoes-favoritos-mobile"></p>
+                                            </div>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox01-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox01-submenu">
+                                        PROMOÇÕES
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li><a href="/pages/promocoes.html">Ver tudo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox02-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox02-submenu">
+                                        CUIDADOS DIÁRIOS
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li>V<a href="/pages/cuidados.html">Ver tudo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox03-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox03-submenu">
+                                        TRAMENTOS
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li><a href="/pages/tratamentos.html">Ver tudo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox04-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox04-submenu">
+                                        FINALIZADORES
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li><a href="/pages/finalizadores.html">Ver tudo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox05-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox05-submenu">
+                                        LINHAS
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li>Ver tudo</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-eq">
+                                    <label class="lista-rodape cabecalho__principal__lista__sub-lista__item"
+                                        for="checkbox06-submenu">
+                                        <input type="checkbox" class="checkbox checkbox-eq" id="checkbox06-submenu">
+                                        KITS
+                                        <div class="arrow-left"></div>
+                                    </label>
+                                    <div class="dropdown-eq">
+                                        <ul class="dropdown__conteiner-eq">
+                                            <li><a href="/pages/kits.html">Ver tudo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="cabecalho__principal__lista__sub-lista__bottom">
+                                    <span class="cabecalho__principal__lista__sub-lista__item_usuario">
+                                        <img class="icone-20" src="/assets/plus.png" alt="icnone_usuario">
+                                        <p>TrussPro</p>
+                                    </span>
+                                    <span class="cabecalho__principal__lista__sub-lista__item_usuario">
+                                        <img class="icone-20" src="/assets/capelo.png" alt="icnone_coracao">
+                                        <p>Truss academy</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
 
-                </li>
-                <li>
-                    <a href="../index.html"><img class="cabecalho__principal__lista_logo" src="../assets/logoDruss.png"
-                            alt="logo-truss"></a>
-                </li>
-                <li>
-                    <a href="#" id="sacola-mobile"><img class="cabecalho__principal__lista_imagem"
-                            src="/assets/sacola.png" alt="icone_sacola"></a>
-                    <p class="notificacoes-sacola" id="notificacoes-sacola-mobile"></p>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img class="cabecalho__principal__lista_logo"
+                                src="../assets/logoDruss.png" alt="logo-truss"></a>
+                    </li>
+                    <li>
+                        <a href="#" id="sacola-mobile" class="group-text-icone">
+                            <img class="cabecalho__principal__lista_imagem" src="/assets/sacola.png" alt="icone_sacola">
+                            <p class="notificacoes-sacola" id="notificacoes-sacola-mobile"></p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="conteiner__pesquisar comteiner__pesquisa-mobile" style="width: 100%;">
+                    <input type="search" class="conteiner__pesquisar-campo" placeholder="O que você busca?"
+                        data-campo-pesquisa>
+                    <ul class="lista-produtos-pesquisados" data-resultado-pesquisa></ul>
+                </div>
+            </div>
             <div class="cabecalho__principal-1024-categorias">
                 <ul class="cabecalho__principal-1024-categorias-lista">
                     <li><a href="/pages/promocoes.html"
@@ -222,8 +232,11 @@
                         <div class="fundo">
                             <div class="progresso-frete-gratis" id="progresso-frete-gratis"></div>
                         </div>
-                        <p class="info-progresso-frete" id="info-progresso-frete">Faltam <strong
-                                class="valor-faltante-frete" id="valor-faltante-frete"></strong> para ganhar
+                        <p class="info-progresso-frete" id="info-progresso-frete">
+                            Você ganhou <span>FRETE GRÁTIS!!!</span>
+                        </p>
+                        <p class="info-progresso-frete" id="info-progresso">
+                            Faltam <span class="valor-faltante-frete" id="valor-faltante-frete"></span> para ganhar
                             <strong>FRETE
                                 GRÁTIS</strong>
                         </p>
@@ -275,7 +288,7 @@
                                 </label>
                             </li>
                         </ul>
-                        <form class="form formulario-login" id="formulario-login" >
+                        <form class="form formulario-login" id="formulario-login">
                             <div class="form-conteiner">
                                 <div class="form-input">
                                     <label class="form-rotulo" for="form-input-email">E-mail</label>
@@ -288,8 +301,8 @@
                                     <div class="password" style="flex-direction: column;">
                                         <input type="password" name="senha" class="form-input-box" id="form-input-senha"
                                             placeholder="Senha" required>
-                                            <button class="show-password" id="show-password-login"></button>
-                                            <p class="mensagem-erro mensagem-erro-senha"></p>
+                                        <button class="show-password" type="button" id="show-password-login"></button>
+                                        <p class="mensagem-erro mensagem-erro-senha"></p>
                                     </div>
                                 </div>
                                 <div class="area-submit">
@@ -310,7 +323,7 @@
                             </div>
                         </form>
 
-                        <form class="form formulario-cadastro" id="formulario-cadastro" >
+                        <form class="form formulario-cadastro" id="formulario-cadastro">
                             <div class="form-conteiner">
                                 <div class="form-input">
                                     <label class="form-rotulo" for="form-input-nome-cadastro">Nome</label>
@@ -325,27 +338,28 @@
                                     <p class="mensagem-erro"></p>
                                 </div>
                                 <div class="form-input">
-                                    <label class="form-rotulo" for="form-input-senha-cadastro" >Senha</label>
+                                    <label class="form-rotulo" for="form-input-senha-cadastro">Senha</label>
                                     <div class="password">
                                         <input type="password" name="senha" class="form-input-box"
                                             id="form-input-senha-cadastro" placeholder="Senha" required>
-                                        <button class="show-password" id="show-password-cad" data-showPass
-                                        ></button>
-                                        <p class="mensagem-erro mensagem-erro-senha" id="mensagem-senha" ></p>
+                                        <button class="show-password" id="show-password-cad" data-showPass></button>
+                                        <p class="mensagem-erro mensagem-erro-senha" id="mensagem-senha"></p>
                                     </div>
                                 </div>
                                 <div class="form-input">
                                     <label class="form-rotulo"
-                                        for="form-input-senha-cadastro-confirm" >Confirmação</label>
+                                        for="form-input-senha-cadastro-confirm">Confirmação</label>
                                     <div class="password">
                                         <input type="password" name="senha" class="form-input-box"
                                             id="form-input-senha-cadastro-confirm" placeholder="Senha" required>
-                                        <button class="show-password" id="show-password-cad-confi" ></button>
+                                        <button class="show-password" id="show-password-cad-confi"></button>
                                         <p class="mensagem-erro mensagem-erro-senha" id="msgErroSenhaConf"></p>
                                     </div>
                                 </div>
-                                <div class="form-input" style="display: flex; align-items: flex-start; position: relative; margin-top: 1em;" >
-                                    <input type="checkbox" name="termos" class="termos__input" id="checkbox-termos" required>
+                                <div class="form-input"
+                                    style="display: flex; align-items: flex-start; position: relative; margin-top: 1em;">
+                                    <input type="checkbox" name="termos" class="termos__input" id="checkbox-termos"
+                                        required>
                                     <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos
                                         meus dados conforme
                                         descrito na Política
@@ -417,7 +431,7 @@
     <section class="carrossel">
         <div class="botao-flutuante" id="botao-flutuante">
             <p class="botao-flutuante-msg">Fale com a nossa equipe de atendimento😁</p>
-            <a href="#0" class="botao-flutuante-link">
+            <a href=" " class="botao-flutuante-link">
                 <div class="botao-flutuante-img"></div>
                 <p id="botao-flutuante-notificacao" class="botao-flutuante-notificacao"></p>
             </a>
@@ -427,16 +441,16 @@
         <div class="swiper carrossel-itens">
             <div class="swiper-wrapper carrossel-1024">
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-img" src="/assets/carrossel01.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/carrossel01.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-img" src="/assets/carrossel02.jpg" alt=""></a>
+                    <a href=" "><img class="carrossel-img" src="/assets/carrossel02.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-img" src="/assets/carrossel03.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/carrossel03.jpg" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-img" src="/assets/carrossel04.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/carrossel04.jpg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -667,6 +681,7 @@
     <script type="module" src="src/pages/listando-produtos-home.js"></script>
     <script type="module" src="src/formulaio.js"></script>
     <script type="module" src="src/validation/script.js"></script>
+    <script type="module" src="src/auth.js"></script>
 </body>
 
 </html>

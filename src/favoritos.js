@@ -5,7 +5,6 @@ const favoritos = document.getElementById('filtro-back-favoritos');
 const iconeFavoritos = document.getElementById('favoritos');
 const iconeFavoritosMobile = document.getElementById('favoritos-mobile');
 const checkCloseFavorito = document.getElementById('checkbox-favoritos');
-const botaoFlutuante = document.getElementById('botao-flutuante');
 const areaProdutosFavoritos = document.getElementById('produtos-adicionados-favoritos');
 const notificacaoSacola = document.getElementById('notificacoes-sacola')
 const notificacaoSacolaMobile = document.querySelector('#notificacoes-sacola-mobile')
@@ -22,13 +21,11 @@ checkCloseFavorito.style.display = 'none';
 
 iconeFavoritosMobile.addEventListener('click', () => {
     favoritos.style.display = 'block'
-    botaoFlutuante.style.display = 'none';
     sacola.style.display = 'none';
 })
 iconeFavoritos.addEventListener('click', (event) => {
     event.preventDefault()
     favoritos.style.display = 'block'
-    botaoFlutuante.style.display = 'none';
     sacola.style.display = 'none';
 })
 
