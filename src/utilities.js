@@ -1,4 +1,7 @@
+import atualizarFavoritos from "./favoritos.js";
 import atualizaSacola from "./sacola.js";
+const notificacaoSacola = document.querySelector('#notificacoes-sacola');
+const notificacaoSacolaMobile = document.querySelector('#notificacoes-sacola-mobile');
 
 function valorTotalFrete() {
     const somatoria = document.getElementById('titulo-rodape-sacola');
@@ -8,11 +11,11 @@ function valorTotalFrete() {
     const valorFaltante = document.getElementById('valor-faltante-frete')
     freteGratis.style.display = 'none';
     if (!somatoria || !freteGratis || !infoProgresso || !barraProgresso || !valorFaltante) {
-         console.log(`${valorFaltante}\n${infoProgresso}\n${somatoria}\n${barraProgresso}\n${freteGratis}\n`);
+        console.log(`${valorFaltante}\n${infoProgresso}\n${somatoria}\n${barraProgresso}\n${freteGratis}\n`);
     }
 
     const soma = utilities.listaProdutosLocalStorage('bag').reduce((acc, valor) => {
-        let desconto = valor.discout > 1 ? valor.discout / 100 : valor.discout;
+        let desconto = valor.discount > 1 ? valor.discount / 100 : valor.discount;
         return acc + (valor.price - (valor.price * desconto)) * valor.quantity;
     }, 0);
 
@@ -84,29 +87,36 @@ function atualizaQuantidade(arrBtnIncrementar, arrBtnDecrementar) {
 function adicionarTextoTitulo(titulo, ...elementos) {
     elementos.forEach(elemento => elemento.textContent = titulo);
 }
+const transferirProdutosLocalStorage = (localOrigem, localDestino, areaProdutos, elementoEvento) => {
+    elementoEvento.addEventListener('click', () => {
+        const produtosFavoritados = utilities.listaProdutosLocalStorage(localOrigem) || [];
+        const produtoSacola = produtosFavoritados.map(({ description, ...rest }) => rest);
+        produtoSacola.forEach(prodFavoritos => {
+            utilities.adicionarProdutoLocalStorage(localDestino, prodFavoritos);
+        })
+        areaProdutos.innerHTML = '';
+        localStorage.removeItem(localOrigem);
+        atualizarFavoritos()
+        atualizaSacola();
+    })
+}
 function atualizaNotificacao(local, ...elementos) {
     let qtdQuantidades = 0;
     utilities.listaProdutosLocalStorage(local).forEach(prod => {
         qtdQuantidades += prod.quantity
-
         elementos.forEach(elemento => elemento.textContent = qtdQuantidades);
     })
 }
+const atualizarNotificacoesFavoritos = (local, ...elementos) => {
+    const produtosFavoritados = utilities.listaProdutosLocalStorage(local) || [];
+    elementos.forEach(elemento => {
+        elemento.textContent = produtosFavoritados.length == 0 ? "" : produtosFavoritados.length
+    });
 
+}
 function listaProdutosLocalStorage(local) {
     const produtos = JSON.parse(localStorage.getItem(local)) || [];
     return produtos;
-}
-function deletarProdutoLocalStorage(local, id, event) {
-    const produtos = utilities.listaProdutosLocalStorage(local)
-    const indiceProduto = produtos.findIndex(produtos => produtos.id === id)
-
-    if (indiceProduto !== -1) {
-        produtos.splice(indiceProduto, 1);
-        localStorage.clear();
-        localStorage.setItem(local, JSON.stringify(produtos))
-        event.target.closest('li').remove();
-    }
 }
 function adicionarProdutoLocalStorage(local, produto) {
     let produtos = JSON.parse(localStorage.getItem(local)) || [];
@@ -115,15 +125,30 @@ function adicionarProdutoLocalStorage(local, produto) {
         produtoExiste.quantity++;
     } else {
         produtos.push(produto);
-        console.log(produtos)
     }
     localStorage.setItem(local, JSON.stringify(produtos));
+    atualizaSacola();
+    atualizarFavoritos();
 }
-function deletarProdutoLocalStorageInterface(local, notificacao, _notificacaoSecundaria) {
-    document.querySelectorAll('.icone-lixeira-sacola').forEach((botao) => {
+function deletarProdutoLocalStorage(local, id, event) {
+    const produtos = utilities.listaProdutosLocalStorage(local)
+    const indiceProduto = produtos.findIndex(produtos => produtos.id === id)
+    if (indiceProduto !== -1) {
+        produtos.splice(indiceProduto, 1);
+        localStorage.removeItem(local);
+        localStorage.setItem(local, JSON.stringify(produtos))
+        if (produtos.length <= 0) {
+            notificacaoSacola.textContent = '';
+            notificacaoSacolaMobile.textContent = '';
+        }
+    }
+}
+function deletarProdutoLocalStorageInterface(local, notificacao, _notificacaoSecundaria, eventElemento) {
+    document.querySelectorAll(eventElemento).forEach((botao) => {
         botao.addEventListener('click', (event) => {
             const id = event.target.getAttribute('data-id');
-            utilities.deletarProdutoLocalStorage('bag', id, event)
+            deletarProdutoLocalStorage(local, id, event);
+            atualizarFavoritos();
             atualizaSacola();
             atualizaNotificacao(local, notificacao, _notificacaoSecundaria)
         });
@@ -222,9 +247,11 @@ export const utilities = {
     valorTotalFrete,
     atualizaQuantidade,
     atualizaNotificacao,
+    atualizarNotificacoesFavoritos,
     adicionarTextoTitulo,
     listaProdutosLocalStorage,
     adicionarProdutoLocalStorage,
+    transferirProdutosLocalStorage,
     deletarProdutoLocalStorage,
     deletarProdutoLocalStorageInterface,
     listaProdutos,
