@@ -1,4 +1,13 @@
 @import url("/style/style.css");
+.produto{
+    max-width: 350px;
+}
+.area-listagem-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 0.5em;
+    justify-content: center;
+}
 .produtos-adicionados-sacola{
     overflow: hidden;
     overflow-y: auto;
@@ -114,7 +123,7 @@
 }
 .icone-coracao{
     position: absolute;
-    left: 85%;
+    left: 95%;
     background-image: url(/assets/coracao.svg);
     background-repeat: no-repeat;
     width: 24px;

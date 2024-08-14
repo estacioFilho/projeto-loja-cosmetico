@@ -64,11 +64,11 @@
                             </label>
                         </div>
                         <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
-                            <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
-                                <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
-                                <div class="icone-fechar-menu"></div>
-                            </label>
                             <ul class="cabecalho__principal__lista__sub-lista">
+                                <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
+                                    <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
+                                    <div class="icone-fechar-menu"></div>
+                                </label>
                                 <li class="cabecalho__principal__lista__sub-lista__top">
                                     <button class="cabecalho__principal__lista__sub-lista__item_usuario"
                                         id="form-botao-login">
@@ -177,7 +177,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </li>
                     <li>
                         <a href="../index.html"><img class="cabecalho__principal__lista_logo"
@@ -211,8 +210,8 @@
                     </li>
                 </ul>
             </div>
-
             <div class="filtro-back" id="filtro-back">
+                <label style="width: 50%; height: 100vh;" for="checkbox-sacola"></label>
                 <div class="sacola_compras" id="sacola_compras">
                     <div class="cabecalho-sacola">
                         <label for="checkbox-sacola">
@@ -248,18 +247,16 @@
                     </div>
                 </div>
             </div>
-            <div class="filtro-back-favoritos" id="filtro-back-favoritos">
+            <div class="filtro-back-favoritos" style="display: flex;" id="filtro-back-favoritos">
                 <div class="area-favoritos" id="favoritos">
                     <div class="cabecalho-favoritos">
+                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
                         <label class="group-favoritos" for="checkbox-favoritos">
                             <input type="checkbox" class="checkbox-favoritos" id="checkbox-favoritos">
                             <div class="icone-fechar-favoritos"></div>
                         </label>
-                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
                     </div>
-                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos">
-
-                    </ul>
+                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos"></ul>
                     <div class="rodape-favorito">
                         <div class="botoes-favoritos">
                             <p>Temos um cupom pra você: <span class="cupom-favoritos"></span></p>
@@ -374,11 +371,9 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
-
         </div>
     </header>
     <div class="limite"></div>
@@ -398,10 +393,10 @@
                     <img src="/assets/slide01.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/slide02.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/slide2.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/slide03.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/slide03.png" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
@@ -417,13 +412,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/banner.jpg" class="d-block w-100" alt="...">
+                    <img src="/assets/slide1-mob.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/banner02.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/slide2-mob.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/banner03.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/slide03-mob.png" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
@@ -436,8 +431,8 @@
                 <p id="botao-flutuante-notificacao" class="botao-flutuante-notificacao"></p>
             </a>
         </div>
-        <h2 class="carrossel-titulo">#étrend</h2>
-        <p class="carrossel-texto">Veja o que está bombando</p>
+        <h2 class="titulo_destaque">As tendências.</h2>
+        <p class="descricao_destaque">Lorem, ipsum dolor sit amet consectetur.</p>
         <div class="swiper carrossel-itens">
             <div class="swiper-wrapper carrossel-1024">
                 <div class="swiper-slide">
@@ -456,21 +451,18 @@
         </div>
     </section>
     <section class="area-produtos">
-        <h2 class="titulo-ofertas">
-            Ofertas relampago!!!
-        </h2>
-        <p class="descricao-listagem">Acabaram de sair dor forno!</p>
-        <div class="area-listagem-produtos" id="area-produtos">
-
-        </div>
-
+        <h2 class="titulo_destaque">Ofertas relampago!</h2>
+        <p class="descricao_destaque">Acabaram de sair do forno!</p>
+        <div class="area-listagem-produtos" id="area-produtos"></div>
     </section>
     <section class="gif">
+        <h2 class="titulo_destaque">Nova linha</h2>
+        <p class="descricao_destaque">Lorem, ipsum dolor sit amet consectetur.</p>
         <div class="gif__conteiner">
             <img src="/assets/apresentacao.gif" alt="Nova linha" class="gif__conteiner-gif">
             <div class="gif__conteiner-apresentacao">
                 <h2 class="git__conteiner-apresentacao-titulo">nova linha</h2>
-                <h2 class="git__conteiner-apresentacao-subtitulo">Uma Nova Era Em Truss</h2>
+                <h2 class="git__conteiner-apresentacao-subtitulo">Uma Nova Era Em Druss</h2>
                 <p class="git__conteiner-apresentacao-paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing
                     elit. Molestias consequatur amet aliquam magnam, aut ad corporis at quasi minus. Unde tempora
                     impedit aut quas. Provident at facilis sit aliquid doloremqueLorem ipsum, dolor sit amet consectetur
@@ -482,27 +474,27 @@
         </div>
     </section>
     <section class="carrossel-recomendacoes-profissional">
-        <h3 class="corrossel-recomendacoes__titulo">Quem usa recomenda!</h3>
-        <p class="carrossel-cuidados__texto">Lorem, ipsum dolor sit amet consectetur.</p>
-        <div class="swiper carrosel-recomendacoes">
-            <div class="swiper-wrapper">
+        <h2 class="titulo_destaque">Quem usa recomenda!</h2>
+        <p class="descricao_destaque">Lorem, ipsum dolor sit amet consectetur.</p>
+        <div class="swiper carrossel-itens">
+            <div class="swiper-wrapper carrossel-1024">
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-recomendacoes-img" src="/assets/recomendacao01.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/depo02.png" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-recomendacoes-img" src="/assets/recomendacao02.jpg" alt=""></a>
+                    <a href=" "><img class="carrossel-img" src="/assets/depo.png" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-recomendacoes-img" src="/assets/recomendacao03.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/depo03.png" alt=""></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img class="carrossel-recomendacoes-img" src="/assets/recomendacao01.jpg" alt=""></a>
+                    <a href=""><img class="carrossel-img" src="/assets/depo02.png" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
     <div class="card-profissionais">
-        <img src="/assets/truss-pro_mob.jpg" alt="card profissional" class="card-profissional-img">
+        <img src="/assets/DRUSS-STAR.png" alt="card profissional" class="card-profissional-img">
     </div>
     <section class="newlatter">
         <div class="newlatter__conteiner">
@@ -637,37 +629,36 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const larguraTela = window.screen.availWidth;
-        console.log(larguraTela);
-
-        function verificaLargura(largura) {
-            if (largura < 429) {
-                return 2;
-            } else if (largura > 429 && largura <= 1000) {
-                return 3
-            } else if (largura >= 1024 && largura < 1250) {
-                return 3;
-            } else {
-                return 4;
+        const interSlider = () => {
+            let larguraTela = window.screen.availWidth;
+            const qtdSlidePerview = (largura) => {
+                if (larguraTela < 449) {
+                    return 2;
+                } else if (largura > 450 && largura <= 700) {
+                    return 3
+                } else {
+                    return 4;
+                }
             }
-        }
-        window.onload = function () {
-            window.addEventListener('resize', function () {
-                location.reload();
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 15,
+                slidesPerView: qtdSlidePerview(larguraTela),
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
-        };
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 40,
-            slidesPerView: verificaLargura(larguraTela),
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        }
+        window.addEventListener('resize', function () {
+            interSlider();
         });
+        document.addEventListener('DOMContentLoaded', () => {
+            interSlider()
+        })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

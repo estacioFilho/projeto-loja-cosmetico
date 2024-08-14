@@ -1,6 +1,6 @@
 .filtro-back {
     background-color: rgba(0, 0, 0, 0.483);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: fixed;
     z-index: 4;
@@ -64,10 +64,10 @@
 }
 
 .produtos-adicionados-sacola {
+    height: 40vh;
     border-bottom: 2px solid var(--cor-cinza-claro);
     margin: 0;
     padding: 0 0.5em 0 1em;
-    height: 450px;
 }
 
 .rodape-sacola {
@@ -176,12 +176,14 @@
     color: var(--cor-branco);
 }
 
+
 .conteiner-produto-adicionanado {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
     width: 100%;
 }
+
 
 .quatidade-produto {
     border-radius: 5px;

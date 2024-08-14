@@ -1,4 +1,4 @@
-.filtro-back-favoritos{
+.filtro-back-favoritos {
     display: none;
     background-color: rgba(0, 0, 0, 0.483);
     width: 100vw;
@@ -8,72 +8,87 @@
     top: 0;
     right: 0;
 }
-.titulo-favoritto{
+
+.titulo-favoritto {
     padding: 1em 0;
     text-align: center;
     margin: 0;
+}
+.cabecalho-favoritos{
+    gap: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     border-bottom: 2px solid var(--cor-cinza-claro);
 }
-.group-favoritos{
+.group-favoritos {
     display: flex;
-    position: relative;
-
+    justify-content: right;
 }
-.icone-fechar-favoritos{
-    margin-top: 20px;
-    position: absolute;
-    left: 100%;
-    background-image: url(/assets/keyboard_double_arrow_left_.svg);
+
+.icone-fechar-favoritos {
+    background-image: url(/assets/fechar-black.svg);
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     cursor: pointer;
 
 }
-.titulo-produto-favoritos{
-    font-size: 18px ;
+
+.titulo-produto-favoritos {
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
 }
-.preco-desconto{
+
+.preco-desconto {
     font-size: 18px;
     font-weight: 700;
 
 }
-.preco-original{
-font-size: 16px;
-display: flex;
-align-items: center;
-gap: 1em;
+
+.preco-original {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
-.group-text-favoritos{
+
+.group-text-favoritos {
     display: flex;
     flex-direction: column;
 }
-.nome-produto-favorito{
+
+.nome-produto-favorito {
     font-weight: 700;
-   
+
 }
-.adicionar-favorito-sacola{
+
+.adicionar-favorito-sacola {
     background-color: transparent;
     border: none;
 }
-.descricao-produto-favorito{
+
+.descricao-produto-favorito {
     font-size: 14px;
     font-weight: 400;
 }
-.area-favoritos{
+
+.area-favoritos {
     background-color: var(--cor-branco);
-    width: 70%;
+    max-width: 500px;   
+    width: 80%;
     height: 100vh;
 }
-.group-botoes-favoritos{
+
+.group-botoes-favoritos {
     display: flex;
     width: 80px;
     align-items: center;
     justify-content: space-between;
 }
-.botoes-favoritos{
+
+.botoes-favoritos {
     padding-top: 1em;
     display: flex;
     flex-direction: column;
@@ -81,56 +96,65 @@ gap: 1em;
     align-items: center;
     border-top: 2px solid var(--cor-cinza-claro);
 }
-.botao-adicionar-todos{
+
+.botao-adicionar-todos {
     display: flex;
     gap: 0.5em;
     background-color: var(--cor-branco);
     padding: 0.5em;
     border-radius: 20px;
 }
-.icone-sacola{
+
+.icone-sacola {
     background-image: url(/assets/sacola-black.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
 }
-.botao-adicionar-todos:hover{
+
+.botao-adicionar-todos:hover {
     background-color: var(--cor-preto);
-    color:  var(--cor-branco);
-    .icone-sacola{
+    color: var(--cor-branco);
+
+    .icone-sacola {
         background-image: url(/assets/sacola-branco.svg);
         background-repeat: no-repeat;
         width: 24px;
         height: 24px;
     }
+
     transition: 0.5s;
 }
-.rodape-favorito{
+
+.rodape-favorito {
     border-top: 1.5px solid var(--cor-cinza-claro);
     height: 20vh;
 }
-.produtos-adicionados-favoritos{
-    height: 450px;
+
+.produtos-adicionados-favoritos {
+    height: 40vh;
     overflow: hidden;
     overflow-y: auto;
 }
-.produto-adicionando-favoritos{
+
+.produto-adicionando-favoritos {
     padding: 0.5em 1em;
     box-shadow: 0px 5px 2px var(--cor-cinza-claro);
     display: flex;
     gap: 1em;
     align-items: center;
 }
-.cabecalho__principal__lista__sub-lista__item_usuario{
+
+.cabecalho__principal__lista__sub-lista__item_usuario {
     text-decoration: none;
 }
-.imagem-produto-favorito{
-    width: 25%;
+
+.imagem-produto-favorito {
     max-width: 150px;
     min-width: 100px
 }
 
-.group-text-icone{
+.group-text-icone {
     gap: 0.5em;
     display: flex;
     cursor: pointer;
@@ -138,7 +162,8 @@ gap: 1em;
     text-decoration: none;
     color: var(--cor-titulo);
 }
-.notificacoes{
+
+.notificacoes {
     position: absolute;
     bottom: 60%;
     margin: 0;
@@ -150,16 +175,16 @@ gap: 1em;
     background-color: red;
     width: 15px;
 }
-@media(max-width: 800px){
-    .nome-produto-favorito{
+
+@media(max-width: 800px) {
+    .nome-produto-favorito {
         font-size: 16px;
         font-weight: 700;
     }
-    .descricao-produto-favorito{
+
+    .descricao-produto-favorito {
         font-size: 12px;
         font-weight: 400;
     }
-    .area-favoritos{
-        width: 90%;
-    }
+
 }
