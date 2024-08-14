@@ -1,4 +1,5 @@
 .conteiner{
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,17 +26,13 @@
     display: none;
 }
 .area-produtos{
-    margin: 1.5em 0;
+    margin: 2.5em 0;
     padding: 1em;
 }
 .titulo-ofertas{
     padding-left: 0.4em;
 }
-.area-listagem-produtos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em 0.5em;
-}
+
 .descricao-listagem{
     padding-left: 0.5em;
 }

@@ -25,10 +25,25 @@
 }
 
 .conteiner__pesquisar {
+    text-align: left;
     width: 50%;
     padding: 1em;
 }
+.titulo_destaque{
+    text-align: left;
+    font-size: 24px;
+    font-family: 700;
+}
+.descricao_destaque{
+    font-size: 18px;
 
+}
+.gif .titulo_destaque{
+    padding-left: 1em;
+}
+.gif .descricao_destaque{
+    padding-left: 1.5em;
+}
 /* ------ BOTÃO FLUTUANTE ------ */
 .carrossel {
     position: relative;
@@ -84,11 +99,13 @@
     font-weight: 700;
     color: white;
 }
+
 /*Campo pesquisa*/
-.conteiner__pesquisar{
+.conteiner__pesquisar {
     position: relative;
 }
-.lista-produtos-pesquisados{
+
+.lista-produtos-pesquisados {
     width: 95%;
     height: 45vh;
     overflow: hidden;
@@ -100,23 +117,27 @@
     z-index: 4;
     border-radius: 5px;
 }
-.item-encontrado-campo-pesquisa{
+
+.item-encontrado-campo-pesquisa {
     display: flex;
     padding: 0.5em 0;
     align-items: center;
     gap: 1em;
     border-bottom: 1px solid var(--cor-cinza-claro);
 }
-.imagem-pesquisada{
+
+.imagem-pesquisada {
     width: 20%;
 }
-.descricao-categoria-campo-pesquisa{
+
+.descricao-categoria-campo-pesquisa {
     text-decoration: none;
     color: var(--cor-titulo-preto);
     font-size: 12px;
     margin: 0;
 }
-.titulo-produto-campo-pesquisa{
+
+.titulo-produto-campo-pesquisa {
     font-size: 16px;
     margin: 0
 }
@@ -158,7 +179,7 @@
 .cabecalho__principal__lista {
     margin: 0;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
     padding: 0 1em;
 }
@@ -227,15 +248,17 @@
     display: flex;
 }
 
-    .checkbox-menu-fechar{
-        position: absolute;
-        top: 5%;
-        right: 5%;
-    }
+.checkbox-menu-fechar {
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
 .cabecalho__principal__lista__sub-lista {
     padding: 0;
     z-index: 4;
-    width: 340px;
+    width: 80%;
     height: 100vh;
     background-color: var(--cor-branco);
     display: flex;
@@ -295,18 +318,20 @@
     height: 30px;
 }
 
-.menu-hamburg{
+.menu-hamburg {
     background-image: url(../assets/menu.svg);
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
 }
-.icone-fechar-menu{
-    background-image: url('/assets/fechar.svg');
+
+.icone-fechar-menu {
+    background-image: url('/assets/fechar-black.svg');
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
 }
+
 .cabecalho__principal__lista-checkbox:checked~.label {
     background-image: url(../assets/fechar.svg);
 }
@@ -325,13 +350,27 @@
 .cabecalho__principal-1024-categorias {
     display: none;
 }
-.area-menu-mobile{
+
+.area-menu-mobile {
     border: 1px solid var(--cor-cinza-claro);
 }
+
 @media (min-width:800px) {
-    .comteiner__pesquisa-mobile{
+    .titulo_destaque{
+        text-align: left;
+        font-size: 36px;
+        font-family: 700;
+        padding-left: 1.5em;
+    }
+    .descricao_destaque{
+        text-align: left;
+        font-size: 24px;
+        padding-left: 2.5em;
+    }
+    .comteiner__pesquisa-mobile {
         display: none;
     }
+
     .cabecalho__principal {
         position: relative;
     }
@@ -369,9 +408,11 @@
         align-items: center;
         justify-content: space-around;
     }
-    .area-logo{
+
+    .area-logo {
         width: 25%;
     }
+
     .cabecalho__principal-1024-logo {
         width: 35%;
     }

@@ -1,60 +1,77 @@
-.carrossel-recomendacoes-profissional{
+.carrossel-recomendacoes-profissional {
     display: flex;
     flex-direction: column;
     padding: 1em;
 }
-.corrossel-recomendacoes__titulo{
+
+.corrossel-recomendacoes__titulo {
     font-size: 34px;
     font-family: var(--fonte-titulo);
 
 }
-.carrossel-cuidados__texto{
+
+.carrossel-cuidados__texto {
     padding: 0;
 }
-.carrosel-recomendacoes{
+
+.carrosel-recomendacoes {
     width: 100%;
 }
-.carrossel-recomendacoes-img{
+
+.carrossel-recomendacoes-img {
     width: 120px;
-    
-    
+
+
+}
+
+.image-deck {
+    display: none;
 }
 
 
 /* card de profissionais */
 
-.card-profissionais{
+.card-profissionais {
     display: flex;
     padding: 0;
-    margin-top: 4em;    
+    margin-top: 4em;
 }
-.card-profissional-img{
+
+.card-profissional-img {
     justify-content: center;
     align-items: center;
-    
-    width:100%;
+    width: 100%;
 }
+
 @media (min-width:1024px) {
-    .carrosel-recomendacoes{
+
+
+    .carrosel-recomendacoes {
         width: 700px;
     }
-    .corrossel-recomendacoes__titulo{
-       padding-left: 20px;
-    }
-    .carrossel-cuidados__texto{
+
+    .corrossel-recomendacoes__titulo {
         padding-left: 20px;
     }
-    .card-profissional-img{
+
+    .carrossel-cuidados__texto {
+        padding-left: 20px;
+    }
+
+    .card-profissional-img {
         width: 100%;
 
     }
 }
-@media (min-width:1249px)  {
-    .carrosel-recomendacoes{
-        padding-left: 10% ;
+
+@media (min-width:1249px) {
+
+    .carrosel-recomendacoes {
+        padding-left: 10%;
         width: 1000px;
     }
-    .carrossel-recomendacoes-img{
+
+    .carrossel-recomendacoes-img {
         width: 250px;
     }
 }
