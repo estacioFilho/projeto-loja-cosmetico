@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Tratamentos</title>
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../assets/icone-DRUSS.svg" type="image/x-icon">
@@ -66,11 +66,11 @@
                             </label>
                         </div>
                         <div class="filtro-back-favoritos filtro-menu" id="filtro-back-menu">
-                            <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
-                                <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
-                                <div class="icone-fechar-menu"></div>
-                            </label>
                             <ul class="cabecalho__principal__lista__sub-lista">
+                                <label for="checkbox-fechar-menu" class="checkbox-menu-fechar">
+                                    <input type="checkbox" class="checkbox-fechar-menu" id="checkbox-fechar-menu">
+                                    <div class="icone-fechar-menu"></div>
+                                </label>
                                 <li class="cabecalho__principal__lista__sub-lista__top">
                                     <button class="cabecalho__principal__lista__sub-lista__item_usuario"
                                         id="form-botao-login">
@@ -111,7 +111,7 @@
                                     </label>
                                     <div class="dropdown-eq">
                                         <ul class="dropdown__conteiner-eq">
-                                            <li><a href="cuidados.html">Ver tudo</a></li>
+                                            <li><a href="/pages/cuidados.html">Ver tudo</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -124,7 +124,7 @@
                                     </label>
                                     <div class="dropdown-eq">
                                         <ul class="dropdown__conteiner-eq">
-                                            <li><a href="tratamentos.html">Ver tudo</a></li>
+                                            <li><a href="/pages/tratamentos.html">Ver tudo</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -137,7 +137,7 @@
                                     </label>
                                     <div class="dropdown-eq">
                                         <ul class="dropdown__conteiner-eq">
-                                            <li><a href="finalizadores.html">Ver tudo</a></li>
+                                            <li><a href="/pages/finalizadores.html">Ver tudo</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -163,18 +163,18 @@
                                     </label>
                                     <div class="dropdown-eq">
                                         <ul class="dropdown__conteiner-eq">
-                                            <li><a href="kits.html">Ver tudo</a></li>
+                                            <li><a href="/pages/kits.html">Ver tudo</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="cabecalho__principal__lista__sub-lista__bottom">
                                     <span class="cabecalho__principal__lista__sub-lista__item_usuario">
                                         <img class="icone-20" src="/assets/plus.png" alt="icnone_usuario">
-                                        <p>DrussPro</p>
+                                        <p>TrussPro</p>
                                     </span>
                                     <span class="cabecalho__principal__lista__sub-lista__item_usuario">
                                         <img class="icone-20" src="/assets/capelo.png" alt="icnone_coracao">
-                                        <p>Druss academy</p>
+                                        <p>Truss academy</p>
                                     </span>
                                 </li>
                             </ul>
@@ -249,18 +249,16 @@
                     </div>
                 </div>
             </div>
-            <div class="filtro-back-favoritos" id="filtro-back-favoritos">
+            <div class="filtro-back-favoritos" style="display: flex;" id="filtro-back-favoritos">
                 <div class="area-favoritos" id="favoritos">
                     <div class="cabecalho-favoritos">
+                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
                         <label class="group-favoritos" for="checkbox-favoritos">
                             <input type="checkbox" class="checkbox-favoritos" id="checkbox-favoritos">
                             <div class="icone-fechar-favoritos"></div>
                         </label>
-                        <h3 class="titulo-favoritto">Seu Favoritos</h3>
                     </div>
-                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos">
-
-                    </ul>
+                    <ul class="produtos-adicionados-favoritos" id="produtos-adicionados-favoritos"></ul>
                     <div class="rodape-favorito">
                         <div class="botoes-favoritos">
                             <p>Temos um cupom pra você: <span class="cupom-favoritos"></span></p>
@@ -463,7 +461,7 @@
                     <div class="rodape dropdown-eq">
                         <ul class="dropdown__conteiner-eq">
                             <li>Fundação</li>
-                            <li>Misão</li>
+                            <li>Missão</li>
                             <li>Parceiros</li>
                         </ul>
                     </div>
