@@ -1,0 +1,23 @@
+services:
+  api:
+    image: estacioqueiroz/api-druss:1.2
+    container_name: api-druss
+    ports:
+      - "3006:3006"
+    networks:
+      - network-druss
+
+  web:
+    build:
+      context: .
+    container_name: web-druss
+    ports:
+      - "5002:5002"
+    depends_on:
+      - api
+    networks:
+      - network-druss
+
+networks:
+  network-druss:
+    external: true

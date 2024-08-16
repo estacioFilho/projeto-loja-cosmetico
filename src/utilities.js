@@ -156,7 +156,7 @@ function deletarProdutoLocalStorageInterface(local, notificacao, _notificacaoSec
 }
 
 function listaProdutos(endpoint) {
-    return fetch(`https://api-druss.onrender.com/${endpoint}`)
+    return fetch(`http://localhost:3006/${endpoint}`) //AQUI
         .then(response => response.json())
         .then(produtos => produtos)
         .catch((erro) => {
@@ -164,7 +164,7 @@ function listaProdutos(endpoint) {
         });
 }
 function listaUmProdutos(endpoint, id) {
-    return fetch(`https://api-druss.onrender.com/${endpoint}/${id}`)
+    return fetch(`http://localhost:3006/${endpoint}/${id}`)
         .then(response => response.json())
         .then(produtos => produtos)
         .catch((erro) => {
@@ -172,7 +172,7 @@ function listaUmProdutos(endpoint, id) {
         });
 }
 function deletarTodosProdutos(endpoint) {
-    fetch(`https://api-druss.onrender.com/${endpoint}`,
+    fetch(`http://localhost:3006/${endpoint}`,
         {
             method: "DELETE",
             headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -196,7 +196,7 @@ function deletarTodosProdutos(endpoint) {
 
 
 function cadastrarUsuario(endpoint, dados) {
-    return fetch(`https://api-druss.onrender.com/api/auth/${endpoint}`, {
+    return fetch(`http://localhost:3006/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -205,13 +205,13 @@ function cadastrarUsuario(endpoint, dados) {
     })
         .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                return response.json();
             }
             return response.json();
         });
 }
 function login(endpoint, dados) {
-    return fetch(`https://api-druss.onrender.com/api/auth/${endpoint}`, {
+    return fetch(`http://localhost:3006/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -220,13 +220,13 @@ function login(endpoint, dados) {
     })
         .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                return response.json();
             }
             return response.json();
         });
 }
 function autenticacao(endpoint, token) {
-    return fetch(`https://api-druss.onrender.com/${endpoint}`, {
+    return fetch(`http://localhost:3006/${endpoint}`, {
         method: "GET",
         headers: {
             'Authorization': `Bearer ${token}`
@@ -234,10 +234,13 @@ function autenticacao(endpoint, token) {
     })
         .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Erro de autenticação ${response.status}`);
             }
             return response.json();
-        });
+        })
+        .catch(erro => {
+            console.error(`Error: ${erro}`);
+        })
 }
 
 
