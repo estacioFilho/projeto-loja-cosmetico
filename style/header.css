@@ -44,60 +44,13 @@
 .gif .descricao_destaque{
     padding-left: 1.5em;
 }
-/* ------ BOTÃO FLUTUANTE ------ */
+
 .carrossel {
     position: relative;
 }
 
 .cabecalho__principal {
     position: relative;
-}
-
-.botao-flutuante {
-    position: fixed;
-    z-index: 2;
-    top: 70%;
-    right: 10%;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.botao-flutuante-msg {
-
-    display: none;
-    background-color: var(--cor-cinza-claro);
-    width: 250px;
-    padding: 0.5em;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #aeaeaebb;
-}
-
-.botao-flutuante-link {
-    text-decoration: none;
-    display: flex;
-}
-
-.botao-flutuante-img {
-    border-radius: 50%;
-    position: relative;
-    z-index: 4;
-    background-image: url(/assets/whatsapp-preto.svg);
-    background-repeat: no-repeat;
-    width: 51px;
-    height: 50px;
-}
-
-.botao-flutuante-notificacao {
-    position: absolute;
-    z-index: 5;
-    border-radius: 50%;
-    width: 15px;
-    text-align: center;
-    font-size: 10px;
-    background-color: red;
-    font-weight: 700;
-    color: white;
 }
 
 /*Campo pesquisa*/
@@ -150,14 +103,6 @@
     margin-right: 5px;
 }
 
-.botao-flutuante:hover .botao-flutuante-img {
-    margin-left: 0;
-}
-
-.botao-flutuante:hover .botao-flutuante-msg {
-    display: block;
-    left: 25%;
-}
 
 .cabecalho__promocao__texto-promocao {
     font-weight: 700;

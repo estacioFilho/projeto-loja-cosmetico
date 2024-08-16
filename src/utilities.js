@@ -156,7 +156,7 @@ function deletarProdutoLocalStorageInterface(local, notificacao, _notificacaoSec
 }
 
 function listaProdutos(endpoint) {
-    return fetch(`http://localhost:3006/${endpoint}`) //AQUI
+    return fetch(`https://api-druss.onrender.com/${endpoint}`) //AQUI
         .then(response => response.json())
         .then(produtos => produtos)
         .catch((erro) => {
@@ -164,7 +164,7 @@ function listaProdutos(endpoint) {
         });
 }
 function listaUmProdutos(endpoint, id) {
-    return fetch(`http://localhost:3006/${endpoint}/${id}`)
+    return fetch(`https://api-druss.onrender.com/${endpoint}/${id}`)
         .then(response => response.json())
         .then(produtos => produtos)
         .catch((erro) => {
@@ -172,7 +172,7 @@ function listaUmProdutos(endpoint, id) {
         });
 }
 function deletarTodosProdutos(endpoint) {
-    fetch(`http://localhost:3006/${endpoint}`,
+    fetch(`https://api-druss.onrender.com/${endpoint}`,
         {
             method: "DELETE",
             headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -196,7 +196,7 @@ function deletarTodosProdutos(endpoint) {
 
 
 function cadastrarUsuario(endpoint, dados) {
-    return fetch(`http://localhost:3006/api/auth/${endpoint}`, {
+    return fetch(`https://api-druss.onrender.com/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -211,7 +211,7 @@ function cadastrarUsuario(endpoint, dados) {
         });
 }
 function login(endpoint, dados) {
-    return fetch(`http://localhost:3006/api/auth/${endpoint}`, {
+    return fetch(`https://api-druss.onrender.com/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -226,7 +226,7 @@ function login(endpoint, dados) {
         });
 }
 function autenticacao(endpoint, token) {
-    return fetch(`http://localhost:3006/${endpoint}`, {
+    return fetch(`https://api-druss.onrender.com/${endpoint}`, {
         method: "GET",
         headers: {
             'Authorization': `Bearer ${token}`

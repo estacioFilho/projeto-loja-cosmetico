@@ -12,9 +12,7 @@ services:
       - network-druss
 
   web:
-    build:
-      context: .
-    container_name: web-druss
+    image: estacioqueiroz/front-druss:1.1
     ports:
       - "5002:5002"
     depends_on:

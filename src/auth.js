@@ -30,38 +30,7 @@ formCadastro.addEventListener('submit', (event) => {
             alert(error)
         });
 });
-
-// formLogin.addEventListener('submit', (event) => {
-//     event.preventDefault();
-
-//     const userLogin = {
-//         email: emailLogin.value,
-//         password: senhaLogin.value
-//     }
-//     console.log(userLogin)
-//     utilities.login('login', userLogin)
-//         .then((response) => {
-//             console.log(response.token)
-//             localStorage.setItem("token-acesso", response.token)
-//             formLogin.reset();
-//             alert(response.message);
-//         })
-//         .catch((error) => {
-//             console.error('Falha no login. ' + error)
-//         })
-
-//     const token = localStorage.getItem("token-acesso")
-
-//     console.log(token)
-
-//     utilities.autenticacao('api/protected', token)
-//         .then((response) => {
-//             location.href = '../pages/boasvindas.html';
-//             alert(response.message)
-//         })
-//         .catch((error) => console.error('Erro na autenticação:', error))
-
-// })
+ 
 formLogin.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -78,7 +47,6 @@ formLogin.addEventListener('submit', (event) => {
                 localStorage.setItem("token-acesso", response.token);
                 alert(response.message);
                 let token = localStorage.getItem('token-acesso')
-                console.log(token)
                 // Executa a autenticação usando o token armazenado
                 utilities.autenticacao('api/protected', token)
                     .then((response) => {
