@@ -1,3 +1,7 @@
+networks:
+  network-druss:
+    driver: bridge
+
 services:
   api:
     image: estacioqueiroz/api-druss:1.2
@@ -18,6 +22,3 @@ services:
     networks:
       - network-druss
 
-networks:
-  network-druss:
-    external: true
