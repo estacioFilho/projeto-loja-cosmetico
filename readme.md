@@ -234,5 +234,3 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/estacioFilho)
 
 ---
-
-Espero que este *README* ajude a guiar o uso e desenvolvimento do projeto. Se precisar de alguma modificação ou adição, só me avisar! 😊
